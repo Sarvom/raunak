@@ -5,7 +5,7 @@ ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-string cta-button:
+string cta-button-1:
 
 -- ftd.row:
 width: fill-container
@@ -19,9 +19,8 @@ src: $navbar.logo
 margin-vertical.px: 12
 
 -- ftd.row:
-align-self: end
-align-content: right
 spacing.fixed.px: 24
+margin-vertical.px: 12
 
 -- ftd.text: $navbar.cta-text-1
 role: $inherited.types.label-large
@@ -41,12 +40,23 @@ text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
 
--- ftd.text: $navbar.cta-button
+-- ftd.row:
+spacing.fixed.px: 6
+
+-- ftd.text: $navbar.cta-button-1
 role: $inherited.types.label-large
 text-align: center
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 2
+border-radius.px: 4
+border-color: #362FD9
+link: https://chatai.com/accounts/login/
 
 -- button: Try for free
-url: https://chatai.com/
+url: https://chatai.com/chat/
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -70,15 +80,138 @@ string url:
 -- ftd.text: $button.name
 role: $inherited.types.label-large
 text-align: center
-padding-left.px: 30
-padding-right.px: 30
-padding-top.px: 10
-padding-bottom.px: 10
+padding-vertical.px: 12
+padding-horizontal.px: 32
 border-width.px: 1
-border-radius.px: 10
-background.solid: #A855F7
-border-color: #c091fb
+border-radius.px: 4
+background.solid: #2563eb
+border-color: #2563eb
 color: white
 link: $button.url
 
 -- end: button
+
+
+
+
+
+
+
+
+
+
+-- component hero:
+ftd.image-src icon:
+ftd.image-src cover:
+ftd.image-src cover-dot:
+ftd.image-src cover-line:
+string headline:
+body content:
+string button-whatsapp:
+ftd.image-src whatsapp-icon:
+string whatsapp-url:
+string button-sms:
+ftd.image-src sms-icon:
+string sms-url:
+string button-web:
+ftd.image-src web-icon:
+string web-url:
+
+-- ftd.column:
+width: fill-container
+
+
+-- ftd.row:
+
+-- ftd.column:
+margin-horizontal.px: 200
+
+-- ftd.image:
+src: $hero.icon
+
+-- ftd.text: $hero.headline
+role: $inherited.types.heading-large
+
+-- ftd.text:
+role: $inherited.types.heading-tiny
+
+$hero.content
+
+-- ftd.row:
+
+-- ftd.row:
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 1
+border-radius.px: 4
+background.solid: #2563eb
+border-color: #2563eb
+-- ftd.image:
+src: $hero.whatsapp-icon
+
+-- ftd.text: $hero.button-whatsapp
+role: $inherited.types.label-large
+text-align: center
+color: white
+link: $hero.whatsapp-url
+
+-- end: ftd.row
+
+-- ftd.row:
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 1
+border-radius.px: 4
+background.solid: #2563eb
+border-color: #2563eb
+
+-- ftd.image:
+src: $hero.sms-icon
+
+-- ftd.text: $hero.button-sms
+role: $inherited.types.label-large
+text-align: center
+color: white
+link: $hero.sms-url
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 2
+border-radius.px: 4
+border-color: #362FD9
+
+-- ftd.image:
+src: $hero.web-icon
+
+-- ftd.text: $hero.button-web
+role: $inherited.types.label-large
+text-align: center
+link: $hero.web-url
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $hero.cover
+z-index: 3
+
+-- ftd.image:
+src: $hero.cover-dot
+z-index: 2
+
+-- ftd.image:
+src: $hero.cover-line
+z-index: 2
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero
