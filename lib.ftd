@@ -20,7 +20,6 @@ margin-vertical.px: 12
 
 -- ftd.row:
 spacing.fixed.px: 24
-margin-vertical.px: 12
 
 -- ftd.text: $navbar.cta-text-1
 role: $inherited.types.label-large
@@ -119,7 +118,7 @@ string web-url:
 
 -- ftd.column:
 width: fill-container
-
+margin-vertical.px: 108
 
 -- ftd.row:
 
@@ -133,24 +132,34 @@ src: $hero.icon
 role: $inherited.types.heading-large
 
 -- ftd.text:
-role: $inherited.types.heading-tiny
+margin-top.px: 24
+margin-bottom.px: 48
+role: $inherited.types.heading-small
 
 $hero.content
 
 -- ftd.row:
+spacing.fixed.px: 6
 
 -- ftd.row:
-padding-vertical.px: 12
-padding-horizontal.px: 32
+align-content: center
+width.fixed.px: 250
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
 border-width.px: 1
-border-radius.px: 4
+border-radius.px: 8
+spacing.fixed.px: 8
 background.solid: #2563eb
 border-color: #2563eb
+
 -- ftd.image:
 src: $hero.whatsapp-icon
+width.fixed.px: 33
+height.fixed.px: 33
 
 -- ftd.text: $hero.button-whatsapp
-role: $inherited.types.label-large
+role: $inherited.types.copy-large
 text-align: center
 color: white
 link: $hero.whatsapp-url
@@ -158,18 +167,24 @@ link: $hero.whatsapp-url
 -- end: ftd.row
 
 -- ftd.row:
-padding-vertical.px: 12
-padding-horizontal.px: 32
+align-content: center
+width.fixed.px: 250
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
 border-width.px: 1
-border-radius.px: 4
+border-radius.px: 8
+spacing.fixed.px: 8
 background.solid: #2563eb
 border-color: #2563eb
 
 -- ftd.image:
 src: $hero.sms-icon
+width.fixed.px: 23
+height.fixed.px: 33
 
 -- ftd.text: $hero.button-sms
-role: $inherited.types.label-large
+role: $inherited.types.copy-large
 text-align: center
 color: white
 link: $hero.sms-url
@@ -180,17 +195,23 @@ link: $hero.sms-url
 
 -- ftd.row:
 align-content: center
-padding-vertical.px: 12
-padding-horizontal.px: 32
+width.fixed.px: 512
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
+spacing.fixed.px: 8
 border-width.px: 2
-border-radius.px: 4
+border-radius.px: 8
 border-color: #362FD9
+margin-top.px: 30
 
 -- ftd.image:
 src: $hero.web-icon
+width.fixed.px: 33
+height.fixed.px: 30
 
 -- ftd.text: $hero.button-web
-role: $inherited.types.label-large
+role: $inherited.types.copy-large
 text-align: center
 link: $hero.web-url
 
@@ -198,20 +219,170 @@ link: $hero.web-url
 
 -- end: ftd.column
 
+-- ftd.row:
+
 -- ftd.image:
+top.px: 234
+right.px: 201
 src: $hero.cover
 z-index: 3
 
 -- ftd.image:
+top.px: 522
+left.px: 877
 src: $hero.cover-dot
 z-index: 2
 
 -- ftd.image:
+top.px: 298
+left.px: 1083
 src: $hero.cover-line
-z-index: 2
+z-index: 1
+
+-- end: ftd.row
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component pricing-card:
+caption plan-name:
+string plan-type:
+string duration:
+string feature-1:
+string feature-2:
+string feature-3:
+
+-- ftd.column:
+align-self: center
+align-content: center
+height.fixed.px: 511
+width.fixed.px: 311
+background.solid: #F1F3F8
+
+
+-- ftd.text: $pricing-card.plan-name
+role: $inherited.types.copy-large
+margin-top.px: 52
+margin-bottom.px: 15
+text-align: center
+
+-- ftd.text: $pricing-card.plan-type
+role: $inherited.types.label-large
+margin-bottom.px: 55
+color: #909192
+
+-- ftd.text: $pricing-card.duration
+role: $inherited.types.heading-small
+margin-bottom.px: 50
+color: #362FD9
+
+-- ftd.column:
+align-content: left
+margin-vertical.px: 50
+
+-- ftd.row:
+align-content: left
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: images/Vectortick.png
+
+-- ftd.text: $pricing-card.feature-1
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: left
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: images/Vectortick.png
+
+-- ftd.text: $pricing-card.feature-2
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: left
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: images/Vectortick.png
+
+-- ftd.text: $pricing-card.feature-3
+role: $inherited.types.heading-tiny
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- button: Try for free
+url: https://chatai.com/chat/
+
+-- end: ftd.column
+
+-- end: pricing-card
+
+
+
+
+
+
+
+
+
+
+-- component pricing:
+optional caption title:
+optional string head:
+optional body body:
+children wrap:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+align-content: center
+padding-vertical.px: 120
+
+-- ftd.text: $pricing.head
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $pricing.title
+role: $inherited.types.heading-medium
+region: h2
+
+-- ftd.text: $pricing.body
+if: {pricing.body != NULL}
+role: $inherited.types.source-code
+text-align: center
+
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+spacing.fixed.px: 25
+children: $pricing.wrap
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: pricing
+
+
+

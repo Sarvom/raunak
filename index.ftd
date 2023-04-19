@@ -26,3 +26,29 @@ web-url: https://chatai.com/chat/
 
 Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
 It will push your productivity and efficiency to another galaxy.
+
+-- lib.pricing: Everything at your disposal
+head: Pricing Plans
+
+-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- end: lib.pricing
