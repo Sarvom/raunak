@@ -41,7 +41,7 @@ text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
 
--- ftd.text: $navbar.cta-button-1
+-- ftd.text: $navbar.cta-button
 role: $inherited.types.label-large
 text-align: center
 
