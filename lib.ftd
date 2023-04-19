@@ -396,6 +396,8 @@ children: $pricing.wrap
 -- component service-card:
 caption title:
 body body:
+ftd.color title-color:
+ftd.color border-color:
 
 -- ftd.column:
 background.solid: #F1F3F8
@@ -404,10 +406,11 @@ width.fixed.px: 336
 border-radius.px: 8
 padding.px: 30
 border-left-width.px: 4
-border-color: #CD4A88
+border-color: $service-card.border-color
 
 -- ftd.text: $service-card.title
 role: $inherited.types.copy-regular
+color: $service-card.title-color
 
 -- ftd.text: $service-card.body
 role: $inherited.types.copy-small
@@ -415,6 +418,68 @@ role: $inherited.types.copy-small
 -- end: ftd.column
 
 -- end: service-card
+
+
+
+
+
+
+
+
+
+
+-- component service:
+optional caption title:
+optional string head:
+optional body body:
+children wrap:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+align-content: center
+padding-vertical.px: 120
+padding-horizontal.px: 200
+
+-- ftd.text: $service.head
+if: {service.body != NULL}
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $service.title
+if: {service.body != NULL}
+role: $inherited.types.heading-medium
+region: h2
+
+-- ftd.text: $service.body
+if: {service.body != NULL}
+role: $inherited.types.source-code
+text-align: center
+
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+spacing.fixed.px: 16
+children: $service.wrap
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: service
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
