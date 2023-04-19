@@ -479,6 +479,95 @@ children: $service.wrap
 
 
 
+-- component application:
+optional caption title:
+optional string head:
+optional body body:
+children wrap:
+
+-- ftd.row:
+padding.px: 200
+spacing.fixed.px: 89
+
+-- ftd.column:
+width.fixed.px: 493
+height.fixed.px: 763
+background.solid: #F1F3F8
+border-radius.px: 8
+
+-- ftd.image:
+src: images/user.png
+margin-top.px: 158
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $application.title
+role: $inherited.types.heading-medium
+margin-bottom.px: 24
+
+-- ftd.text: $application.body
+role: $inherited.types.source-code
+
+-- ftd.column:
+wrap: true
+align-self: start
+align-content: left
+children: $application.wrap
+margin-vertical.px: 80
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: application
+
+
+
+
+
+
+
+
+
+
+-- component application-card:
+caption title:
+string number:
+body body:
+string cta-text:
+
+-- ftd.column:
+margin-vertical.px: 50
+
+-- ftd.row:
+spacing.fixed.px: 20
+
+-- ftd.text: $application-card.number
+role: $inherited.types.source-code
+
+-- ftd.text: $application-card.title
+role: $inherited.types.source-code
+
+-- end: ftd.row
+
+-- ftd.text: $application-card.body
+role: $inherited.types.label-large
+
+-- ftd.text: $application-card.cta-text
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: application-card
+
+
+
+
+
 
 
 
