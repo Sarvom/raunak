@@ -356,8 +356,9 @@ children wrap:
 width: fill-container
 spacing.fixed.px: 24
 align-content: center
+align-self: center
 padding-vertical.px: 120
-padding-horizontal.px: 200
+;; padding-horizontal.px: 200
 
 -- ftd.text: $pricing.head
 role: $inherited.types.heading-tiny
