@@ -520,8 +520,16 @@
 "ftd#font-copy": "sans-serif",
 "ftd#font-display": "sans-serif",
 "ftd#system-dark-mode": false,
-"sarvom.github.io/raunak/lib#button:name:0": "Chat Ai",
-"sarvom.github.io/raunak/lib#button:url:0": "https://chatai.com/"
+"sarvom.github.io/raunak/lib#button:name:0,1,4": "Try for free",
+"sarvom.github.io/raunak/lib#button:url:0,1,4": "https://chatai.com/",
+"sarvom.github.io/raunak/lib#navbar:cta-button:0": "Login",
+"sarvom.github.io/raunak/lib#navbar:cta-text-1:0": "Home",
+"sarvom.github.io/raunak/lib#navbar:cta-text-2:0": "Pricing",
+"sarvom.github.io/raunak/lib#navbar:cta-text-3:0": "Support",
+"sarvom.github.io/raunak/lib#navbar:logo:0": {
+"dark": "images/Logo.png",
+"light": "images/Logo.png"
+}
 }
 </script>
 <script type="ftd" id="ftd-external-children">
@@ -736,7 +744,7 @@ margin-block-end: 1em;
 </head>
 <body style="height: 100%; margin: 0;">
 
-<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><a data-id="0:main" href="https://chatai.com/" style="background-color: rgba(168,85,247,1); border-bottom-width: 1px; border-color: rgba(192,145,251,1); border-left-width: 1px; border-radius: 10px; border-right-width: 1px; border-top-width: 1px; color: rgba(255,255,255,1); font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; text-align: center" class="ft_common ft_md">Chat Ai</a></div>
+<div data-id="main" style="height: 100%; width: 100%" class="ft_common ft_column"><div data-id="0:main" style="gap: 279px; height: fit-content; justify-content: start; padding-bottom: 20px; padding-left: 200px; padding-right: 200px; padding-top: 20px; width: 100%" class="ft_common ft_row"><img data-id="0,0:main" src="images/Logo.png" style="margin-bottom: 12px; margin-top: 12px" class="ft_common"></img><div data-id="0,1:main" style="align-items: center; align-self: end; gap: 24px; justify-content: start" class="ft_common ft_row"><div data-id="0,1,0:main" style="font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin-bottom: 12px; margin-left: 32px; margin-right: 32px; margin-top: 12px; text-align: center" class="ft_common ft_md">Home</div><div data-id="0,1,1:main" style="font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin-bottom: 12px; margin-left: 32px; margin-right: 32px; margin-top: 12px; text-align: center" class="ft_common ft_md">Pricing</div><div data-id="0,1,2:main" style="font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin-bottom: 12px; margin-left: 32px; margin-right: 32px; margin-top: 12px; text-align: center" class="ft_common ft_md">Support</div><div data-id="0,1,3:main" style="font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; text-align: center" class="ft_common ft_md">Login</div><a data-id="0,1,4:main" href="https://chatai.com/" style="background-color: rgba(168,85,247,1); border-bottom-width: 1px; border-color: rgba(192,145,251,1); border-left-width: 1px; border-radius: 10px; border-right-width: 1px; border-top-width: 1px; color: rgba(255,255,255,1); font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; text-align: center" class="ft_common ft_md">Try for free</a></div></div></div>
 
 
 <script>
@@ -1850,51 +1858,214 @@ return (ftd.toggle_rive_boolean(rive,input,args,data,id));
 
 
 window.node_change_main = {};
-window.node_change_main["0:main__text"] = function(data) {
-document.querySelector(`[data-id="0:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#button:name:0", data);
+window.node_change_main["0,0:main__src"] = function(data) {
+if(!data["ftd#dark-mode"]){
+document.querySelector(`[data-id="0,0:main"]`).setAttribute("src", resolve_reference("sarvom.github.io/raunak/lib#navbar:logo:0", data).light);
+}
+else {document.querySelector(`[data-id="0,0:main"]`).setAttribute("src", resolve_reference("sarvom.github.io/raunak/lib#navbar:logo:0", data).dark);}
+
+
+if (document.querySelector(`[data-id="0,0:main"]`).getAttribute("src") == "REMOVE-KEY"){
+document.querySelector(`[data-id="0,0:main"]`).removeAttribute("src");
+}
+}
+window.node_change_main["0,1,0:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,0:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#navbar:cta-text-1:0", data);
 }
 
-window.node_change_main["0:main__href"] = function(data) {
-document.querySelector(`[data-id="0:main"]`).setAttribute("href", resolve_reference("sarvom.github.io/raunak/lib#button:url:0", data));
-
-if (document.querySelector(`[data-id="0:main"]`).getAttribute("href") == "REMOVE-KEY"){
-document.querySelector(`[data-id="0:main"]`).removeAttribute("href");
-}
-}
-
-window.node_change_main["0:main__font-family"] = function(data) {
+window.node_change_main["0,1,0:main__font-family"] = function(data) {
 if(data["ftd#device"] == "desktop"){
-document.querySelector(`[data-id="0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+document.querySelector(`[data-id="0,1,0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
 }
-else {document.querySelector(`[data-id="0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
-}
-
-window.node_change_main["0:main__font-size"] = function(data) {
-if(data["ftd#device"] == "desktop"){
-document.querySelector(`[data-id="0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
-}
-else {document.querySelector(`[data-id="0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+else {document.querySelector(`[data-id="0,1,0:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
 }
 
-window.node_change_main["0:main__font-weight"] = function(data) {
+window.node_change_main["0,1,0:main__font-size"] = function(data) {
 if(data["ftd#device"] == "desktop"){
-document.querySelector(`[data-id="0:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+document.querySelector(`[data-id="0,1,0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
 }
-else {document.querySelector(`[data-id="0:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+else {document.querySelector(`[data-id="0,1,0:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
 }
 
-window.node_change_main["0:main__letter-spacing"] = function(data) {
+window.node_change_main["0,1,0:main__font-weight"] = function(data) {
 if(data["ftd#device"] == "desktop"){
-document.querySelector(`[data-id="0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+document.querySelector(`[data-id="0,1,0:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
 }
-else {document.querySelector(`[data-id="0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+else {document.querySelector(`[data-id="0,1,0:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
 }
 
-window.node_change_main["0:main__line-height"] = function(data) {
+window.node_change_main["0,1,0:main__letter-spacing"] = function(data) {
 if(data["ftd#device"] == "desktop"){
-document.querySelector(`[data-id="0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+document.querySelector(`[data-id="0,1,0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
 }
-else {document.querySelector(`[data-id="0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+else {document.querySelector(`[data-id="0,1,0:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,0:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,0:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+window.node_change_main["0,1,1:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,1:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#navbar:cta-text-2:0", data);
+}
+
+window.node_change_main["0,1,1:main__font-family"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,1:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,1:main__font-size"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,1:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,1:main__font-weight"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,1:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,1:main__letter-spacing"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,1:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,1:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,1:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,1:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+window.node_change_main["0,1,2:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,2:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#navbar:cta-text-3:0", data);
+}
+
+window.node_change_main["0,1,2:main__font-family"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,2:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,2:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,2:main__font-size"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,2:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,2:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,2:main__font-weight"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,2:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,2:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,2:main__letter-spacing"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,2:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,2:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,2:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,2:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,2:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+window.node_change_main["0,1,3:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,3:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#navbar:cta-button:0", data);
+}
+
+window.node_change_main["0,1,3:main__font-family"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,3:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,3:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,3:main__font-size"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,3:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,3:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,3:main__font-weight"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,3:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,3:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,3:main__letter-spacing"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,3:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,3:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,3:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,3:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,3:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+window.node_change_main["0,1,4:main__text"] = function(data) {
+document.querySelector(`[data-id="0,1,4:main"]`).innerHTML = resolve_reference("sarvom.github.io/raunak/lib#button:name:0,1,4", data);
+}
+
+window.node_change_main["0,1,4:main__href"] = function(data) {
+document.querySelector(`[data-id="0,1,4:main"]`).setAttribute("href", resolve_reference("sarvom.github.io/raunak/lib#button:url:0,1,4", data));
+
+if (document.querySelector(`[data-id="0,1,4:main"]`).getAttribute("href") == "REMOVE-KEY"){
+document.querySelector(`[data-id="0,1,4:main"]`).removeAttribute("href");
+}
+}
+
+window.node_change_main["0,1,4:main__font-family"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,4:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,4:main"]`).style["font-family"] = eval(`({0})["font-family"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,4:main__font-size"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,4:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,4:main"]`).style["font-size"] = eval(`({0})["size"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,4:main__font-weight"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,4:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,4:main"]`).style["font-weight"] = eval(`({0}).weight`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,4:main__letter-spacing"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,4:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,4:main"]`).style["letter-spacing"] = eval(`({0})["letter-spacing"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
+}
+
+window.node_change_main["0,1,4:main__line-height"] = function(data) {
+if(data["ftd#device"] == "desktop"){
+document.querySelector(`[data-id="0,1,4:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).desktop)));
+}
+else {document.querySelector(`[data-id="0,1,4:main"]`).style["line-height"] = eval(`({0})["line-height"]`.format(JSON.stringify(resolve_reference("ftd#default-types.label-large", data).mobile)));}
 }
 window.set_value_main = {};
 window.set_value_main["ftd#dark-mode"] = function (data, new_value, remaining) {
@@ -1906,19 +2077,21 @@ set_data_value(data, "ftd#dark-mode", new_value);
 
 window.ftd.call_mutable_value_changes("ftd#dark-mode", "main");
 window.ftd.call_immutable_value_changes("ftd#dark-mode", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__color"]){window.node_change_main["0:main__color"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__background-color"]){window.node_change_main["0,1,4:main__background-color"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__background-image"]){window.node_change_main["0:main__background-image"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__background-image"]){window.node_change_main["0,1,4:main__background-image"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__background-color"]){window.node_change_main["0:main__background-color"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__background-size"]){window.node_change_main["0,1,4:main__background-size"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__background-position"]){window.node_change_main["0:main__background-position"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__background-repeat"]){window.node_change_main["0,1,4:main__background-repeat"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__background-size"]){window.node_change_main["0:main__background-size"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__border-color"]){window.node_change_main["0,1,4:main__border-color"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__background-repeat"]){window.node_change_main["0:main__background-repeat"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__background-position"]){window.node_change_main["0,1,4:main__background-position"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__border-color"]){window.node_change_main["0:main__border-color"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__color"]){window.node_change_main["0,1,4:main__color"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__src"]){window.node_change_main["0,0:main__src"](data);
 }
 };
 
@@ -1931,15 +2104,55 @@ set_data_value(data, "ftd#default-types", new_value);
 
 window.ftd.call_mutable_value_changes("ftd#default-types", "main");
 window.ftd.call_immutable_value_changes("ftd#default-types", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__letter-spacing"]){window.node_change_main["0:main__letter-spacing"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-size"]){window.node_change_main["0,1,2:main__font-size"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__line-height"]){window.node_change_main["0:main__line-height"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-family"]){window.node_change_main["0,1,0:main__font-family"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-family"]){window.node_change_main["0:main__font-family"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__line-height"]){window.node_change_main["0,1,1:main__line-height"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-weight"]){window.node_change_main["0:main__font-weight"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-weight"]){window.node_change_main["0,1,0:main__font-weight"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-size"]){window.node_change_main["0:main__font-size"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-size"]){window.node_change_main["0,1,0:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__line-height"]){window.node_change_main["0,1,2:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-size"]){window.node_change_main["0,1,3:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-family"]){window.node_change_main["0,1,2:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__letter-spacing"]){window.node_change_main["0,1,3:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__line-height"]){window.node_change_main["0,1,3:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-family"]){window.node_change_main["0,1,3:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__line-height"]){window.node_change_main["0,1,4:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-weight"]){window.node_change_main["0,1,4:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-weight"]){window.node_change_main["0,1,1:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__letter-spacing"]){window.node_change_main["0,1,0:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__letter-spacing"]){window.node_change_main["0,1,4:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-family"]){window.node_change_main["0,1,1:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__letter-spacing"]){window.node_change_main["0,1,1:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__line-height"]){window.node_change_main["0,1,0:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-weight"]){window.node_change_main["0,1,2:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__letter-spacing"]){window.node_change_main["0,1,2:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-weight"]){window.node_change_main["0,1,3:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-size"]){window.node_change_main["0,1,4:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-family"]){window.node_change_main["0,1,4:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-size"]){window.node_change_main["0,1,1:main__font-size"](data);
 }
 };
 
@@ -1952,41 +2165,146 @@ set_data_value(data, "ftd#device", new_value);
 
 window.ftd.call_mutable_value_changes("ftd#device", "main");
 window.ftd.call_immutable_value_changes("ftd#device", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-size"]){window.node_change_main["0:main__font-size"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-weight"]){window.node_change_main["0,1,1:main__font-weight"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__line-height"]){window.node_change_main["0:main__line-height"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-family"]){window.node_change_main["0,1,3:main__font-family"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-family"]){window.node_change_main["0:main__font-family"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-family"]){window.node_change_main["0,1,0:main__font-family"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__font-weight"]){window.node_change_main["0:main__font-weight"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__line-height"]){window.node_change_main["0,1,1:main__line-height"](data);
 }
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__letter-spacing"]){window.node_change_main["0:main__letter-spacing"](data);
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-weight"]){window.node_change_main["0,1,2:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-size"]){window.node_change_main["0,1,3:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__font-weight"]){window.node_change_main["0,1,3:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__letter-spacing"]){window.node_change_main["0,1,3:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__line-height"]){window.node_change_main["0,1,2:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-family"]){window.node_change_main["0,1,4:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-weight"]){window.node_change_main["0,1,4:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-weight"]){window.node_change_main["0,1,0:main__font-weight"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-family"]){window.node_change_main["0,1,2:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__line-height"]){window.node_change_main["0,1,4:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__font-size"]){window.node_change_main["0,1,0:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__letter-spacing"]){window.node_change_main["0,1,2:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-family"]){window.node_change_main["0,1,1:main__font-family"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__letter-spacing"]){window.node_change_main["0,1,0:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__line-height"]){window.node_change_main["0,1,0:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__line-height"]){window.node_change_main["0,1,3:main__line-height"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__font-size"]){window.node_change_main["0,1,4:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__letter-spacing"]){window.node_change_main["0,1,4:main__letter-spacing"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__font-size"]){window.node_change_main["0,1,1:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__font-size"]){window.node_change_main["0,1,2:main__font-size"](data);
+}
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__letter-spacing"]){window.node_change_main["0,1,1:main__letter-spacing"](data);
 }
 };
 
-window.set_value_main["sarvom.github.io/raunak/lib#button:name:0"] = function (data, new_value, remaining) {
+window.set_value_main["sarvom.github.io/raunak/lib#button:name:0,1,4"] = function (data, new_value, remaining) {
 if (!!remaining) {
-set_data_value(data, "sarvom.github.io/raunak/lib#button:name:0" + "." + remaining, new_value);
+set_data_value(data, "sarvom.github.io/raunak/lib#button:name:0,1,4" + "." + remaining, new_value);
 } else {
-set_data_value(data, "sarvom.github.io/raunak/lib#button:name:0", new_value);
+set_data_value(data, "sarvom.github.io/raunak/lib#button:name:0,1,4", new_value);
 }
 
-window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#button:name:0", "main");
-window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#button:name:0", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__text"]){window.node_change_main["0:main__text"](data);
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#button:name:0,1,4", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#button:name:0,1,4", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__text"]){window.node_change_main["0,1,4:main__text"](data);
 }
 };
 
-window.set_value_main["sarvom.github.io/raunak/lib#button:url:0"] = function (data, new_value, remaining) {
+window.set_value_main["sarvom.github.io/raunak/lib#button:url:0,1,4"] = function (data, new_value, remaining) {
 if (!!remaining) {
-set_data_value(data, "sarvom.github.io/raunak/lib#button:url:0" + "." + remaining, new_value);
+set_data_value(data, "sarvom.github.io/raunak/lib#button:url:0,1,4" + "." + remaining, new_value);
 } else {
-set_data_value(data, "sarvom.github.io/raunak/lib#button:url:0", new_value);
+set_data_value(data, "sarvom.github.io/raunak/lib#button:url:0,1,4", new_value);
 }
 
-window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#button:url:0", "main");
-window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#button:url:0", "main");
-if(!!window["node_change_main"] && !!window.node_change_main["0:main__href"]){window.node_change_main["0:main__href"](data);
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#button:url:0,1,4", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#button:url:0,1,4", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,4:main__href"]){window.node_change_main["0,1,4:main__href"](data);
+}
+};
+
+window.set_value_main["sarvom.github.io/raunak/lib#navbar:cta-button:0"] = function (data, new_value, remaining) {
+if (!!remaining) {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-button:0" + "." + remaining, new_value);
+} else {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-button:0", new_value);
+}
+
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-button:0", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-button:0", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,3:main__text"]){window.node_change_main["0,1,3:main__text"](data);
+}
+};
+
+window.set_value_main["sarvom.github.io/raunak/lib#navbar:cta-text-1:0"] = function (data, new_value, remaining) {
+if (!!remaining) {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-1:0" + "." + remaining, new_value);
+} else {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-1:0", new_value);
+}
+
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-1:0", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-1:0", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,0:main__text"]){window.node_change_main["0,1,0:main__text"](data);
+}
+};
+
+window.set_value_main["sarvom.github.io/raunak/lib#navbar:cta-text-2:0"] = function (data, new_value, remaining) {
+if (!!remaining) {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-2:0" + "." + remaining, new_value);
+} else {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-2:0", new_value);
+}
+
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-2:0", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-2:0", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,1:main__text"]){window.node_change_main["0,1,1:main__text"](data);
+}
+};
+
+window.set_value_main["sarvom.github.io/raunak/lib#navbar:cta-text-3:0"] = function (data, new_value, remaining) {
+if (!!remaining) {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-3:0" + "." + remaining, new_value);
+} else {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:cta-text-3:0", new_value);
+}
+
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-3:0", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#navbar:cta-text-3:0", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,1,2:main__text"]){window.node_change_main["0,1,2:main__text"](data);
+}
+};
+
+window.set_value_main["sarvom.github.io/raunak/lib#navbar:logo:0"] = function (data, new_value, remaining) {
+if (!!remaining) {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:logo:0" + "." + remaining, new_value);
+} else {
+set_data_value(data, "sarvom.github.io/raunak/lib#navbar:logo:0", new_value);
+}
+
+window.ftd.call_mutable_value_changes("sarvom.github.io/raunak/lib#navbar:logo:0", "main");
+window.ftd.call_immutable_value_changes("sarvom.github.io/raunak/lib#navbar:logo:0", "main");
+if(!!window["node_change_main"] && !!window.node_change_main["0,0:main__src"]){window.node_change_main["0,0:main__src"](data);
 }
 };
 

@@ -1,5 +1,68 @@
 -- import: sarvom.github.io/raunak/assets
 
+-- component navbar:
+ftd.image-src logo:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button:
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 200
+padding-vertical.px: 20
+spacing.fixed.px: 279
+
+-- ftd.image:
+src: $navbar.logo
+margin-vertical.px: 12
+
+-- ftd.row:
+align-self: end
+align-content: right
+spacing.fixed.px: 24
+
+-- ftd.text: $navbar.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 12
+margin-horizontal.px: 32
+
+-- ftd.text: $navbar.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 12
+margin-horizontal.px: 32
+
+-- ftd.text: $navbar.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 12
+margin-horizontal.px: 32
+
+-- ftd.text: $navbar.cta-button
+role: $inherited.types.label-large
+text-align: center
+
+-- button: Try for free
+url: https://chatai.com/
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+
 -- component button:
 caption name:
 string url:
