@@ -1,7 +1,10 @@
 -- import: sarvom.github.io/raunak/assets
 -- import: sarvom.github.io/raunak/lib
 
--- lib.button: Chat Ai
-url: https://chatai.com/
-
+-- lib.navbar: 
+logo: images/Logo.png
+cta-text-1: Home
+cta-text-2: Pricing
+cta-text-3: Support
+cta-button: Login
 
