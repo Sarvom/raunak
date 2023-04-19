@@ -1,0 +1,21 @@
+-- import: sarvom.github.io/raunak/assets
+
+-- component button:
+caption name:
+string url:
+
+-- ftd.text: $button.name
+role: $inherited.types.label-large
+text-align: center
+padding-left.px: 30
+padding-right.px: 30
+padding-top.px: 10
+padding-bottom.px: 10
+border-width.px: 1
+border-radius.px: 10
+background.solid: #A855F7
+border-color: #c091fb
+color: white
+link: $button.url
+
+-- end: button
