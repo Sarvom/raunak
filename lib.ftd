@@ -443,11 +443,11 @@ padding-vertical.px: 120
 padding-horizontal.px: 200
 
 -- ftd.text: $service.head
-if: {service.body != NULL}
+if: {service.head != NULL}
 role: $inherited.types.heading-tiny
 
 -- ftd.text: $service.title
-if: {service.body != NULL}
+if: {service.title != NULL}
 role: $inherited.types.heading-medium
 region: h2
 
@@ -573,6 +573,42 @@ role: $inherited.types.label-large
 
 
 
+-- component signup:
+caption title:
+body body:
+children wrap:
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 200
+
+-- ftd.column:
+align-content: center
+align-self: center
+padding-bottom.px: 48
+
+-- ftd.text: $signup.title
+if: {signup.title != NULL}
+role: $inherited.types.heading-medium
+
+-- ftd.text: $signup.body
+if: {signup.body != NULL}
+role: $inherited.types.source-code
+
+-- end: ftd.column
+
+-- ftd.row:
+wrap: true
+width: fill-container
+align-self: center
+align-content: center
+children: $signup.wrap
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: signup
 
 
 
@@ -583,7 +619,26 @@ role: $inherited.types.label-large
 
 
 
+-- component footer:
 
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 200
+padding-vertical.px: 125
+spacing.fixed.px: 615
 
+-- ftd.text: © 2023 ChatAI
 
+-- ftd.row:
+spacing.fixed.px: 24
 
+-- ftd.text: Terms of Service
+
+-- ftd.text: Privacy Policy
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer

@@ -140,3 +140,14 @@ Forward smart replies to real people or groups. Be more productive, clever and
 awesome!
 
 -- end: lib.application
+
+-- lib.signup: **Want to get your own ChatGPT?**
+
+Signup today and get ChatAI, try for free.
+
+-- lib.button: Try for free
+url: https://chatai.com/chat/
+
+-- end: lib.signup
+
+-- lib.footer:
