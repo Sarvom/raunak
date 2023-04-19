@@ -6,5 +6,23 @@ logo: images/Logo.png
 cta-text-1: Home
 cta-text-2: Pricing
 cta-text-3: Support
-cta-button: Login
+cta-button-1: Login
 
+-- lib.hero:
+icon: images/Vector.png
+cover: images/cover.png
+cover-dot: images/Dots.png
+cover-line: images/Lines.png
+headline: **What if ChatAI was your best friend?**
+button-whatsapp: WhatsApp
+whatsapp-icon: images/whatsapp.png
+whatsapp-url: https://wa.me/18324121561
+button-sms: SMS
+sms-icon: images/sms.png
+sms-url: sms:+15124002950
+button-web: Web
+web-icon: images/web.png
+web-url: https://chatai.com/chat/
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
