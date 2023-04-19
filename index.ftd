@@ -37,16 +37,16 @@ feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
 
--- lib.pricing-card: Trial
-plan-type: Basic
-duration: **14 Days**
+-- lib.pricing-card: Premium
+plan-type: Starter
+duration: **$9 / mo**
 feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
 
--- lib.pricing-card: Trial
-plan-type: Basic
-duration: **14 Days**
+-- lib.pricing-card: Platinum
+plan-type: Pro
+duration: **$90 / mo**
 feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
