@@ -196,6 +196,7 @@ link: $hero.sms-url
 -- end: ftd.row
 
 -- ftd.row:
+align-self: center
 align-content: center
 width.fixed.px: 512
 height.fixed.px: 88
