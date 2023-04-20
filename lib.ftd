@@ -28,18 +28,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
+color: #909192
 
 -- ftd.text: $navbar.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
+color: #909192
 
 -- ftd.text: $navbar.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
+color: #909192
 
 -- ftd.row:
 spacing.fixed.px: 6
@@ -136,7 +139,7 @@ role: $inherited.types.heading-large
 -- ftd.text:
 margin-top.px: 24
 margin-bottom.px: 48
-role: $inherited.types.heading-small
+role: $inherited.types.copy-regular
 
 $hero.content
 
@@ -262,7 +265,7 @@ background.solid: #F1F3F8
 
 
 -- ftd.text: $pricing-card.plan-name
-role: $inherited.types.copy-large
+role: $inherited.types.heading-small
 margin-top.px: 52
 margin-bottom.px: 15
 text-align: center
@@ -273,7 +276,7 @@ margin-bottom.px: 55
 color: #909192
 
 -- ftd.text: $pricing-card.duration
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
 margin-bottom.px: 50
 color: #362FD9
 
@@ -289,7 +292,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-1
-role: $inherited.types.heading-tiny
+role: $inherited.types.copy-regular
 
 -- end: ftd.row
 
@@ -301,7 +304,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-2
-role: $inherited.types.heading-tiny
+role: $inherited.types.copy-regular
 
 -- end: ftd.row
 
@@ -313,7 +316,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-3
-role: $inherited.types.heading-tiny
+role: $inherited.types.copy-regular
 
 -- end: ftd.row
 
@@ -353,12 +356,12 @@ padding-horizontal.px: 200
 role: $inherited.types.heading-tiny
 
 -- ftd.text: $pricing.title
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 region: h2
 
 -- ftd.text: $pricing.body
 if: {pricing.body != NULL}
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 text-align: center
 
 -- ftd.row:
@@ -440,12 +443,12 @@ role: $inherited.types.heading-tiny
 
 -- ftd.text: $service.title
 if: {service.title != NULL}
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 region: h2
 
 -- ftd.text: $service.body
 if: {service.body != NULL}
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 text-align: center
 
 -- ftd.row:
@@ -497,11 +500,11 @@ margin-top.px: 158
 -- ftd.column:
 
 -- ftd.text: $application.title
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 margin-bottom.px: 24
 
 -- ftd.text: $application.body
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- ftd.column:
 wrap: true
@@ -584,11 +587,11 @@ padding-bottom.px: 48
 
 -- ftd.text: $signup.title
 if: {signup.title != NULL}
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-large
 
 -- ftd.text: $signup.body
 if: {signup.body != NULL}
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- end: ftd.column
 
@@ -625,6 +628,7 @@ padding-vertical.px: 125
 spacing.fixed.px: 615
 
 -- ftd.text: © 2023 ChatAI
+role: $inherited.types.source-code
 
 -- ftd.row:
 spacing.fixed.px: 24
