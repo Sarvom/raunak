@@ -144,6 +144,7 @@ $hero.content
 spacing.fixed.px: 6
 
 -- ftd.row:
+align-self: center
 align-content: center
 width.fixed.px: 250
 height.fixed.px: 88
@@ -169,6 +170,7 @@ link: $hero.whatsapp-url
 -- end: ftd.row
 
 -- ftd.row:
+align-self: center
 align-content: center
 width.fixed.px: 250
 height.fixed.px: 88
@@ -196,6 +198,7 @@ link: $hero.sms-url
 -- end: ftd.row
 
 -- ftd.row:
+align-self: center
 align-content: center
 width.fixed.px: 512
 height.fixed.px: 88
