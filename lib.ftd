@@ -1,4 +1,5 @@
 -- import: sarvom.github.io/raunak/assets
+-- import: sarvom.github.io/outfit-typography
 
 -- component navbar:
 ftd.image-src logo:
@@ -6,6 +7,7 @@ string cta-text-1:
 string cta-text-2:
 string cta-text-3:
 string cta-button-1:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.row:
 width: fill-container
@@ -75,6 +77,7 @@ url: https://chatai.com/chat/
 -- component button:
 caption name:
 string url:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -83,8 +86,8 @@ padding-vertical.px: 12
 padding-horizontal.px: 32
 border-width.px: 1
 border-radius.px: 4
-background.solid: #2563eb
-border-color: #2563eb
+background.solid: #362FD9
+border-color: #362FD9
 color: white
 link: $button.url
 
@@ -102,8 +105,6 @@ link: $button.url
 -- component hero:
 ftd.image-src icon:
 ftd.image-src cover:
-ftd.image-src cover-dot:
-ftd.image-src cover-line:
 string headline:
 body content:
 string button-whatsapp:
@@ -115,15 +116,16 @@ string sms-url:
 string button-web:
 ftd.image-src web-icon:
 string web-url:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
-margin-vertical.px: 108
 
 -- ftd.row:
+margin-horizontal.px: 108
+spacing.fixed.px: 140
 
 -- ftd.column:
-margin-horizontal.px: 200
 
 -- ftd.image:
 src: $hero.icon
@@ -150,8 +152,8 @@ padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
 spacing.fixed.px: 8
-background.solid: #2563eb
-border-color: #2563eb
+background.solid: #362FD9
+border-color: #362FD9
 
 -- ftd.image:
 src: $hero.whatsapp-icon
@@ -175,8 +177,8 @@ padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
 spacing.fixed.px: 8
-background.solid: #2563eb
-border-color: #2563eb
+background.solid: #362FD9
+border-color: #362FD9
 
 -- ftd.image:
 src: $hero.sms-icon
@@ -222,22 +224,7 @@ link: $hero.web-url
 -- ftd.row:
 
 -- ftd.image:
-top.px: 234
-right.px: 201
 src: $hero.cover
-z-index: 3
-
--- ftd.image:
-top.px: 522
-left.px: 877
-src: $hero.cover-dot
-z-index: 2
-
--- ftd.image:
-top.px: 298
-left.px: 1083
-src: $hero.cover-line
-z-index: 1
 
 -- end: ftd.row
 
@@ -263,6 +250,7 @@ string duration:
 string feature-1:
 string feature-2:
 string feature-3:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 align-self: center
@@ -351,6 +339,7 @@ optional caption title:
 optional string head:
 optional body body:
 children wrap:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -399,6 +388,7 @@ caption title:
 body body:
 ftd.color title-color:
 ftd.color border-color:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 background.solid: #F1F3F8
@@ -434,6 +424,7 @@ optional caption title:
 optional string head:
 optional body body:
 children wrap:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -484,6 +475,7 @@ optional caption title:
 optional string head:
 optional body body:
 children wrap:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.row:
 padding.px: 200
@@ -539,6 +531,7 @@ caption title:
 string number:
 body body:
 string cta-text:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 margin-vertical.px: 50
@@ -577,6 +570,7 @@ role: $inherited.types.label-large
 caption title:
 body body:
 children wrap:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -620,6 +614,7 @@ children: $signup.wrap
 
 
 -- component footer:
+ftd.type-data types: $outfit-typography.types
 
 -- ftd.row:
 width: fill-container
@@ -634,8 +629,10 @@ spacing.fixed.px: 615
 spacing.fixed.px: 24
 
 -- ftd.text: Terms of Service
+role: $inherited.types.source-code
 
 -- ftd.text: Privacy Policy
+role: $inherited.types.source-code
 
 -- end: ftd.row
 
