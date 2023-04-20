@@ -139,7 +139,7 @@ role: $inherited.types.heading-large
 -- ftd.text:
 margin-top.px: 24
 margin-bottom.px: 48
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 
 $hero.content
 
@@ -292,7 +292,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-1
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 
 -- end: ftd.row
 
@@ -304,7 +304,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-2
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 
 -- end: ftd.row
 
@@ -316,7 +316,7 @@ spacing.fixed.px: 16
 src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-3
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 
 -- end: ftd.row
 
@@ -361,7 +361,7 @@ region: h2
 
 -- ftd.text: $pricing.body
 if: {pricing.body != NULL}
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
@@ -448,7 +448,7 @@ region: h2
 
 -- ftd.text: $service.body
 if: {service.body != NULL}
-role: $inherited.types.copy-regular
+role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
