@@ -152,7 +152,6 @@ padding-vertical.px: 24
 padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
-spacing.fixed.px: 8
 background.solid: #362FD9
 border-color: #362FD9
 
@@ -160,6 +159,7 @@ border-color: #362FD9
 src: $hero.whatsapp-icon
 width.fixed.px: 33
 height.fixed.px: 33
+padding-right.px: 8
 
 -- ftd.text: $hero.button-whatsapp
 role: $inherited.types.copy-large
@@ -170,7 +170,6 @@ link: $hero.whatsapp-url
 -- end: ftd.row
 
 -- ftd.row:
-align-self: center
 align-content: center
 width.fixed.px: 250
 height.fixed.px: 88
@@ -178,7 +177,6 @@ padding-vertical.px: 24
 padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
-spacing.fixed.px: 8
 background.solid: #362FD9
 border-color: #362FD9
 
@@ -198,13 +196,11 @@ link: $hero.sms-url
 -- end: ftd.row
 
 -- ftd.row:
-align-self: center
 align-content: center
 width.fixed.px: 512
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
-spacing.fixed.px: 8
 border-width.px: 2
 border-radius.px: 8
 border-color: #362FD9
