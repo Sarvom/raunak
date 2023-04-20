@@ -1,0 +1,47 @@
+-- import: sarvom.github.io/raunak/assets
+-- import: sarvom.github.io/raunak/lib
+-- import: fifthtry.github.io/doc-site as ds
+
+-- ds.page: Docs
+site-logo: images/moblogo.png
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+
+-- ftd.column:
+width: fill-container
+
+-- fastn-footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: $fastn-footer.fastn-logo.light
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
+
+-- end: ftd.column
+
+-- end: footer
+
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

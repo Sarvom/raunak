@@ -3,7 +3,7 @@
 -- fastn.package: sarvom.github.io/raunak
 
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
+-- fastn.dependency: sarvom.github.io/outfit-typography
 
 -- fastn.auto-import: bling/chat as chat
 -- fastn.auto-import: ds
