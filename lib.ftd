@@ -324,7 +324,7 @@ text-align: center
 -- ftd.text: $pricing-card.plan-type
 role: $inherited.types.label-large
 margin-bottom.px: 55
-color: $inherited.colors.background.step-1
+color: color: $inherited.colors.text
 
 -- ftd.text: $pricing-card.duration
 role: $inherited.types.heading-medium
@@ -478,6 +478,7 @@ color if { $service-card.index == 8 }: $inherited.colors.custom.nine
 
 -- ftd.text: $service-card.body
 role: $inherited.types.copy-small
+color: $inherited.colors.text
 
 -- end: ftd.column
 
