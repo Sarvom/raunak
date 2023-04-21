@@ -3,7 +3,7 @@
 -- import: sarvom.github.io/raunak-cs
 
 -- component page:
-ftd.image-src logo: images/Logo.png
+ftd.image-src logo: $assets.files.images.Logo.png
 string cta-text-1: Home
 string cta-text-2: Pricing
 string cta-text-3: Support
@@ -138,7 +138,7 @@ border-width.px: 1
 border-radius.px: 4
 background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
-color: white
+color: $inherited.colors.cta-primary.text
 link: $button.url
 
 -- end: button
@@ -157,15 +157,15 @@ ftd.image-src icon:
 ftd.image-src cover:
 caption headline:
 body content:
-string button-whatsapp:
-ftd.image-src whatsapp-icon:
-string whatsapp-url:
-string button-sms:
-ftd.image-src sms-icon:
-string sms-url:
-string button-web:
-ftd.image-src web-icon:
-string web-url:
+string button-primary-1:
+ftd.image-src button-primary-1-icon:
+string button-primary-1-url:
+string button-primary-2:
+ftd.image-src button-primary-2-icon:
+string button-primary-2-url:
+string button-secondary-1:
+ftd.image-src button-secondary-1-icon:
+string button-secondary-1-url:
 
 -- ftd.column:
 margin-horizontal.px: 200
@@ -208,17 +208,16 @@ background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
-src: $hero.whatsapp-icon
+src: $hero.button-primary-1-icon
 width.fixed.px: 33
 height.fixed.px: 33
 margin-right.px: 8
 
--- ftd.text: $hero.button-whatsapp
+-- ftd.text: $hero.button-primary-1
 role: $inherited.types.copy-large
 text-align: center
 color: $inherited.colors.text
-link: $hero.whatsapp-url
-
+link: $hero.button-primary-1-url
 -- end: ftd.row
 
 -- ftd.row:
@@ -233,16 +232,16 @@ background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
-src: $hero.sms-icon
+src: $hero.button-primary-2-icon
 width.fixed.px: 23
 height.fixed.px: 33
 margin-right.px: 8
 
--- ftd.text: $hero.button-sms
+-- ftd.text: $hero.button-primary-2
 role: $inherited.types.copy-large
 text-align: center
 color: $inherited.colors.text
-link: $hero.sms-url
+link: $hero.button-primary-2-url
 
 -- end: ftd.row
 
@@ -260,16 +259,16 @@ border-color: $inherited.colors.cta-primary.base
 margin-top.px: 30
 
 -- ftd.image:
-src: $hero.web-icon
+src: $hero.button-secondary-1-icon
 width.fixed.px: 33
 height.fixed.px: 30
 margin-right.px: 8
 
--- ftd.text: $hero.button-web
+-- ftd.text: $hero.button-secondary-1
 role: $inherited.types.copy-large
 color: $inherited.colors.cta-secondary.text
 text-align: center
-link: $hero.web-url
+link: $hero.button-secondary-1-url
 
 -- end: ftd.row
 
@@ -340,7 +339,7 @@ align-content: left
 spacing.fixed.px: 16
 
 -- ftd.image:
-src: images/Vectortick.png
+src: $assets.files.images.Vectortick.png
 
 -- ftd.text: $pricing-card.feature-1
 role: $inherited.types.copy-large
@@ -353,7 +352,7 @@ align-content: left
 spacing.fixed.px: 16
 
 -- ftd.image:
-src: images/Vectortick.png
+src: $assets.files.images.Vectortick.png
 
 -- ftd.text: $pricing-card.feature-2
 role: $inherited.types.copy-large
@@ -366,7 +365,7 @@ align-content: left
 spacing.fixed.px: 16
 
 -- ftd.image:
-src: images/Vectortick.png
+src: $assets.files.images.Vectortick.png
 
 -- ftd.text: $pricing-card.feature-3
 role: $inherited.types.copy-large
@@ -392,7 +391,7 @@ url: https://chatai.com/chat/
 
 
 
--- component pricing:
+-- component pricing-section:
 optional caption title:
 optional string head:
 optional body body:
@@ -405,17 +404,17 @@ align-self: center
 padding-vertical.px: 120
 padding-horizontal.px: 200
 
--- ftd.text: $pricing.head
+-- ftd.text: $pricing-section.head
 role: $inherited.types.heading-tiny
 color: $inherited.colors.cta-primary.base
 
--- ftd.text: $pricing.title
+-- ftd.text: $pricing-section.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 region: h2
 
--- ftd.text: $pricing.body
-if: {pricing.body != NULL}
+-- ftd.text: $pricing-section.body
+if: {pricing-section.body != NULL}
 role: $inherited.types.copy-large
 text-align: center
 
@@ -425,13 +424,13 @@ width: fill-container
 align-self: center
 align-content: center
 spacing.fixed.px: 25
-children: $pricing.wrap
+children: $pricing-section.wrap
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: pricing
+-- end: pricing-section
 
 
 
@@ -442,7 +441,7 @@ children: $pricing.wrap
 
 
 
--- component service-card:
+-- component grid-card:
 caption title:
 integer index:
 body body:
@@ -454,35 +453,35 @@ width.fixed.px: 336
 border-radius.px: 8
 padding.px: 30
 border-left-width.px: 4
-border-color if { $service-card.index == 0 }: $inherited.colors.custom.one
-border-color if { $service-card.index == 1 }: $inherited.colors.custom.two
-border-color if { $service-card.index == 2 }: $inherited.colors.custom.three
-border-color if { $service-card.index == 3 }: $inherited.colors.custom.four
-border-color if { $service-card.index == 4 }: $inherited.colors.custom.five
-border-color if { $service-card.index == 5 }: $inherited.colors.custom.six
-border-color if { $service-card.index == 6 }: $inherited.colors.custom.seven
-border-color if { $service-card.index == 7 }: $inherited.colors.custom.eight
-border-color if { $service-card.index == 8 }: $inherited.colors.custom.nine
+border-color if { $grid-card.index == 0 }: $inherited.colors.custom.one
+border-color if { $grid-card.index == 1 }: $inherited.colors.custom.two
+border-color if { $grid-card.index == 2 }: $inherited.colors.custom.three
+border-color if { $grid-card.index == 3 }: $inherited.colors.custom.four
+border-color if { $grid-card.index == 4 }: $inherited.colors.custom.five
+border-color if { $grid-card.index == 5 }: $inherited.colors.custom.six
+border-color if { $grid-card.index == 6 }: $inherited.colors.custom.seven
+border-color if { $grid-card.index == 7 }: $inherited.colors.custom.eight
+border-color if { $grid-card.index == 8 }: $inherited.colors.custom.nine
 
--- ftd.text: $service-card.title
+-- ftd.text: $grid-card.title
 role: $inherited.types.copy-regular
-color if { $service-card.index == 0 }: $inherited.colors.custom.one
-color if { $service-card.index == 1 }: $inherited.colors.custom.two
-color if { $service-card.index == 2 }: $inherited.colors.custom.three
-color if { $service-card.index == 3 }: $inherited.colors.custom.four
-color if { $service-card.index == 4 }: $inherited.colors.custom.five
-color if { $service-card.index == 5 }: $inherited.colors.custom.six
-color if { $service-card.index == 6 }: $inherited.colors.custom.seven
-color if { $service-card.index == 7 }: $inherited.colors.custom.eight
-color if { $service-card.index == 8 }: $inherited.colors.custom.nine
+color if { $grid-card.index == 0 }: $inherited.colors.custom.one
+color if { $grid-card.index == 1 }: $inherited.colors.custom.two
+color if { $grid-card.index == 2 }: $inherited.colors.custom.three
+color if { $grid-card.index == 3 }: $inherited.colors.custom.four
+color if { $grid-card.index == 4 }: $inherited.colors.custom.five
+color if { $grid-card.index == 5 }: $inherited.colors.custom.six
+color if { $grid-card.index == 6 }: $inherited.colors.custom.seven
+color if { $grid-card.index == 7 }: $inherited.colors.custom.eight
+color if { $grid-card.index == 8 }: $inherited.colors.custom.nine
 
--- ftd.text: $service-card.body
+-- ftd.text: $grid-card.body
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 
 -- end: ftd.column
 
--- end: service-card
+-- end: grid-card
 
 
 
@@ -493,7 +492,7 @@ color: $inherited.colors.text
 
 
 
--- component service:
+-- component grid-section:
 optional caption title:
 optional string head:
 optional body body:
@@ -506,19 +505,19 @@ align-content: center
 padding-vertical.px: 120
 padding-horizontal.px: 200
 
--- ftd.text: $service.head
-if: {service.head != NULL}
+-- ftd.text: $grid-section.head
+if: {grid-section.head != NULL}
 role: $inherited.types.heading-tiny
 color: $inherited.colors.text
 
--- ftd.text: $service.title
-if: {service.title != NULL}
+-- ftd.text: $grid-section.title
+if: {grid-section.title != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 region: h2
 
--- ftd.text: $service.body
-if: {service.body != NULL}
+-- ftd.text: $grid-section.body
+if: {grid-section.body != NULL}
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
@@ -530,15 +529,15 @@ align-self: center
 align-content: center
 spacing.fixed.px: 16
 
--- service-card-wrapper: $o
-$loop$: $service.wrap as $o
+-- grid-card-wrapper: $o
+$loop$: $grid-section.wrap as $o
 index: $LOOP.COUNTER
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: service
+-- end: grid-section
 
 
 
@@ -548,17 +547,17 @@ index: $LOOP.COUNTER
 
 
 
--- component service-card-wrapper:
+-- component grid-card-wrapper:
 caption ftd.ui o:
 integer index:
 
 -- ftd.column:
 
--- service-card-wrapper.o:
+-- grid-card-wrapper.o:
 
 -- end: ftd.column
 
--- end: service-card-wrapper
+-- end: grid-card-wrapper
 
 
 
@@ -569,7 +568,7 @@ integer index:
 
 
 
--- component application:
+-- component image-with-card-section:
 caption title:
 ftd.image-src image:
 body body:
@@ -586,18 +585,18 @@ width.fixed.px: 631
 height.fixed.px: 763
 
 -- ftd.image:
-src: $application.image
+src: $image-with-card-section.image
 
 -- end: ftd.column
 
 -- ftd.column:
 
--- ftd.text: $application.title
+-- ftd.text: $image-with-card-section.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 margin-bottom.px: 24
 
--- ftd.text: $application.body
+-- ftd.text: $image-with-card-section.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -605,7 +604,7 @@ color: $inherited.colors.text
 wrap: true
 align-self: start
 align-content: left
-children: $application.wrap
+children: $image-with-card-section.wrap
 margin-vertical.px: 80
 
 -- end: ftd.column
@@ -614,7 +613,7 @@ margin-vertical.px: 80
 
 -- end: ftd.row
 
--- end: application
+-- end: image-with-card-section
 
 
 
@@ -625,7 +624,7 @@ margin-vertical.px: 80
 
 
 
--- component application-card:
+-- component cta-card:
 caption title:
 string number:
 body body:
@@ -637,27 +636,27 @@ margin-vertical.px: 50
 -- ftd.row:
 spacing.fixed.px: 20
 
--- ftd.text: $application-card.number
+-- ftd.text: $cta-card.number
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
--- ftd.text: $application-card.title
+-- ftd.text: $cta-card.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- end: ftd.row
 
--- ftd.text: $application-card.body
+-- ftd.text: $cta-card.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
--- ftd.text: $application-card.cta-text
+-- ftd.text: $cta-card.cta-text
 role: $inherited.types.label-large
 color: $inherited.colors.text
 
 -- end: ftd.column
 
--- end: application-card
+-- end: cta-card
 
 
 
@@ -668,7 +667,7 @@ color: $inherited.colors.text
 
 
 
--- component signup:
+-- component get-in-touch:
 caption title:
 body body:
 children wrap:
@@ -682,13 +681,13 @@ align-content: center
 align-self: center
 padding-bottom.px: 48
 
--- ftd.text: $signup.title
-if: {signup.title != NULL}
+-- ftd.text: $get-in-touch.title
+if: {get-in-touch.title != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text
 
--- ftd.text: $signup.body
-if: {signup.body != NULL}
+-- ftd.text: $get-in-touch.body
+if: {get-in-touch.body != NULL}
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -699,13 +698,13 @@ wrap: true
 width: fill-container
 align-self: center
 align-content: center
-children: $signup.wrap
+children: $get-in-touch.wrap
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: signup
+-- end: get-in-touch
 
 
 
