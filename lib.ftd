@@ -12,6 +12,9 @@ children c:
 
 -- ftd.column:
 width: fill-container
+colors: $raunak-cs.main
+types: $outfit-typography.types
+background.solid: $inherited.colors.background.base
 
 -- navbar: 
 logo: $page.logo
@@ -23,12 +26,15 @@ cta-button-1: $page.cta-button-1
 -- ftd.column:
 width: fill-container
 children: $page.c
-colors: $raunak-cs.main
-types: $outfit-typography.types
 
 -- end: ftd.column
 
 -- footer:
+text-1: © 2023 ChatAI
+cta-text-1: Terms of Service
+cta-text-2: Privacy Policy
+url-1: /
+url-2: /
 
 -- end: ftd.column
 
@@ -69,21 +75,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
-color: #909192
+color: $inherited.colors.cta-tertiary.base
 
 -- ftd.text: $navbar.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
-color: #909192
+color: $inherited.colors.cta-tertiary.base
 
 -- ftd.text: $navbar.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 12
 margin-horizontal.px: 32
-color: #909192
+color: $inherited.colors.cta-tertiary.base
 
 -- ftd.row:
 spacing.fixed.px: 6
@@ -95,7 +101,8 @@ padding-vertical.px: 12
 padding-horizontal.px: 32
 border-width.px: 2
 border-radius.px: 4
-border-color: #362FD9
+border-color: $inherited.colors.cta-secondary.border
+color: $inherited.colors.cta-secondary.text
 link: https://chatai.com/accounts/login/
 
 -- button: Try for free
@@ -159,7 +166,6 @@ string sms-url:
 string button-web:
 ftd.image-src web-icon:
 string web-url:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 margin-horizontal.px: 200
@@ -176,6 +182,7 @@ src: $hero.icon
 
 -- ftd.text: $hero.headline
 role: $inherited.types.heading-large
+color: $inherited.colors.text
 
 -- ftd.text:
 margin-top.px: 24
@@ -196,8 +203,8 @@ padding-vertical.px: 24
 padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
-background.solid: #362FD9
-border-color: #362FD9
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
 src: $hero.whatsapp-icon
@@ -221,8 +228,8 @@ padding-vertical.px: 24
 padding-horizontal.px: 53
 border-width.px: 1
 border-radius.px: 8
-background.solid: #362FD9
-border-color: #362FD9
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
 src: $hero.sms-icon
@@ -248,7 +255,7 @@ padding-vertical.px: 24
 padding-horizontal.px: 53
 border-width.px: 2
 border-radius.px: 8
-border-color: #362FD9
+border-color: $inherited.colors.cta-primary.base
 margin-top.px: 30
 
 -- ftd.image:
@@ -296,14 +303,13 @@ string duration:
 string feature-1:
 optional string feature-2:
 optional string feature-3:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 align-self: center
 align-content: center
 height.fixed.px: 511
 width.fixed.px: 311
-background.solid: #F1F3F8
+background.solid: $inherited.colors.background.step-1
 padding-bottom.px: 53
 
 -- ftd.text: $pricing-card.plan-name
@@ -315,12 +321,12 @@ text-align: center
 -- ftd.text: $pricing-card.plan-type
 role: $inherited.types.label-large
 margin-bottom.px: 55
-color: #909192
+color: $inherited.colors.background.step-1
 
 -- ftd.text: $pricing-card.duration
 role: $inherited.types.heading-medium
 margin-bottom.px: 50
-color: #362FD9
+color: $inherited.colors.cta-primary.base
 
 -- ftd.column:
 align-content: left
@@ -385,7 +391,6 @@ optional caption title:
 optional string head:
 optional body body:
 children wrap:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -396,6 +401,7 @@ padding-horizontal.px: 200
 
 -- ftd.text: $pricing.head
 role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.base
 
 -- ftd.text: $pricing.title
 role: $inherited.types.heading-large
@@ -433,28 +439,35 @@ children: $pricing.wrap
 caption title:
 integer index:
 body body:
-ftd.color title-color:
 
 -- ftd.column:
-background.solid: #F1F3F8
+background.solid: $inherited.colors.background.step-1
 height.fixed.px: 140
 width.fixed.px: 336
 border-radius.px: 8
 padding.px: 30
 border-left-width.px: 4
-border-color if { $service-card.index == 0 }: #CD4A88
-border-color if { $service-card.index == 1 }: #CD4A88
-border-color if { $service-card.index == 2 }: #CD4A88
-border-color if { $service-card.index == 3 }: #CD4A88
-border-color if { $service-card.index == 4 }: #CD4A88
-border-color if { $service-card.index == 5 }: #4AA6CD
-border-color if { $service-card.index == 6 }: #CD4A88
-border-color if { $service-card.index == 7 }: #CD4A88
-border-color if { $service-card.index == 8 }: #CD4A88
+border-color if { $service-card.index == 0 }: $inherited.colors.custom.one
+border-color if { $service-card.index == 1 }: $inherited.colors.custom.two
+border-color if { $service-card.index == 2 }: $inherited.colors.custom.three
+border-color if { $service-card.index == 3 }: $inherited.colors.custom.four
+border-color if { $service-card.index == 4 }: $inherited.colors.custom.five
+border-color if { $service-card.index == 5 }: $inherited.colors.custom.six
+border-color if { $service-card.index == 6 }: $inherited.colors.custom.seven
+border-color if { $service-card.index == 7 }: $inherited.colors.custom.eight
+border-color if { $service-card.index == 8 }: $inherited.colors.custom.nine
 
 -- ftd.text: $service-card.title
 role: $inherited.types.copy-regular
-color: $service-card.title-color
+color if { $service-card.index == 0 }: $inherited.colors.custom.one
+color if { $service-card.index == 1 }: $inherited.colors.custom.two
+color if { $service-card.index == 2 }: $inherited.colors.custom.three
+color if { $service-card.index == 3 }: $inherited.colors.custom.four
+color if { $service-card.index == 4 }: $inherited.colors.custom.five
+color if { $service-card.index == 5 }: $inherited.colors.custom.six
+color if { $service-card.index == 6 }: $inherited.colors.custom.seven
+color if { $service-card.index == 7 }: $inherited.colors.custom.eight
+color if { $service-card.index == 8 }: $inherited.colors.custom.nine
 
 -- ftd.text: $service-card.body
 role: $inherited.types.copy-small
@@ -477,7 +490,6 @@ optional caption title:
 optional string head:
 optional body body:
 children wrap:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -547,25 +559,23 @@ integer index:
 
 
 -- component application:
-optional caption title:
-optional string head:
-optional body body:
+caption title:
+ftd.image-src image:
+body body:
 children wrap:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.row:
-padding.px: 200
+width: fill-container
+padding-left.px: 102
+padding-right.px: 200
 spacing.fixed.px: 89
 
 -- ftd.column:
-width.fixed.px: 493
+width.fixed.px: 631
 height.fixed.px: 763
-background.solid: #F1F3F8
-border-radius.px: 8
 
 -- ftd.image:
-src: images/user.png
-margin-top.px: 158
+src: $application.image
 
 -- end: ftd.column
 
@@ -607,7 +617,6 @@ caption title:
 string number:
 body body:
 string cta-text:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 margin-vertical.px: 50
@@ -646,7 +655,6 @@ role: $inherited.types.label-large
 caption title:
 body body:
 children wrap:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
@@ -690,7 +698,12 @@ children: $signup.wrap
 
 
 -- component footer:
-ftd.type-data types: $outfit-typography.types
+string text-1:
+optional string text-2:
+string cta-text-1:
+string cta-text-2:
+string url-1:
+string url-2:
 
 -- ftd.row:
 width: fill-container
@@ -699,17 +712,25 @@ padding-horizontal.px: 200
 padding-vertical.px: 125
 spacing.fixed.px: 615
 
--- ftd.text: © 2023 ChatAI
+-- ftd.text: $footer.text-1
+role: $inherited.types.source-code
+
+-- ftd.text: $footer.text-2
+if: {footer.text-2 != NULL}
 role: $inherited.types.source-code
 
 -- ftd.row:
 spacing.fixed.px: 24
 
--- ftd.text: Terms of Service
-role: $inherited.types.source-code
+-- ftd.text: $footer.cta-text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.background.step-1
+link: $footer.url-1
 
--- ftd.text: Privacy Policy
-role: $inherited.types.source-code
+-- ftd.text: $footer.cta-text-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.background.step-1
+link: $footer.url-2
 
 -- end: ftd.row
 
