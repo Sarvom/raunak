@@ -188,6 +188,7 @@ color: $inherited.colors.text
 margin-top.px: 24
 margin-bottom.px: 48
 role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 $hero.content
 
@@ -215,7 +216,7 @@ margin-right.px: 8
 -- ftd.text: $hero.button-whatsapp
 role: $inherited.types.copy-large
 text-align: center
-color: white
+color: $inherited.colors.text
 link: $hero.whatsapp-url
 
 -- end: ftd.row
@@ -240,7 +241,7 @@ margin-right.px: 8
 -- ftd.text: $hero.button-sms
 role: $inherited.types.copy-large
 text-align: center
-color: white
+color: $inherited.colors.text
 link: $hero.sms-url
 
 -- end: ftd.row
@@ -266,6 +267,7 @@ margin-right.px: 8
 
 -- ftd.text: $hero.button-web
 role: $inherited.types.copy-large
+color: $inherited.colors.cta-secondary.text
 text-align: center
 link: $hero.web-url
 
@@ -314,6 +316,7 @@ padding-bottom.px: 53
 
 -- ftd.text: $pricing-card.plan-name
 role: $inherited.types.heading-small
+color: $inherited.colors.text
 margin-top.px: 52
 margin-bottom.px: 15
 text-align: center
@@ -341,6 +344,7 @@ src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-1
 role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -353,6 +357,7 @@ src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-2
 role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -365,6 +370,7 @@ src: images/Vectortick.png
 
 -- ftd.text: $pricing-card.feature-3
 role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 -- end: ftd.row
 
@@ -405,6 +411,7 @@ color: $inherited.colors.cta-primary.base
 
 -- ftd.text: $pricing.title
 role: $inherited.types.heading-large
+color: $inherited.colors.text
 region: h2
 
 -- ftd.text: $pricing.body
