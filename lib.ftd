@@ -123,7 +123,6 @@ string web-url:
 ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
-width: fill-container
 margin-horizontal.px: 200
 
 -- ftd.row:
