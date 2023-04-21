@@ -14,15 +14,15 @@ lang: ftd
 
 \-- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
-cover: images/cover.png
+cover: $assets.files.images.cover.png
 button-whatsapp: WhatsApp
-whatsapp-icon: images/whatsapp.png
+whatsapp-icon: $assets.files.images.whatsapp.png
 whatsapp-url: https://wa.me/18324121561
 button-sms: SMS
-sms-icon: images/sms.png
+sms-icon: $assets.files.images.sms.png
 sms-url: sms:+15124002950
 button-web: Web
-web-icon: images/web.png
+web-icon: $assets.files.images.web.png
 web-url: https://chatai.com/chat/
 
 Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
@@ -30,15 +30,15 @@ It will push your productivity and efficiency to another galaxy.
 
 -- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
-cover: images/cover.png
+cover: $assets.files.images.cover.png
 button-whatsapp: WhatsApp
-whatsapp-icon: images/whatsapp.png
+whatsapp-icon: $assets.files.images.whatsapp.png
 whatsapp-url: https://wa.me/18324121561
 button-sms: SMS
-sms-icon: images/sms.png
+sms-icon: $assets.files.images.sms.png
 sms-url: sms:+15124002950
 button-web: Web
-web-icon: images/web.png
+web-icon: $assets.files.images.web.png
 web-url: https://chatai.com/chat/
 
 Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
