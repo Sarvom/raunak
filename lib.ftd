@@ -508,15 +508,18 @@ padding-horizontal.px: 200
 -- ftd.text: $service.head
 if: {service.head != NULL}
 role: $inherited.types.heading-tiny
+color: $inherited.colors.text
 
 -- ftd.text: $service.title
 if: {service.title != NULL}
 role: $inherited.types.heading-large
+color: $inherited.colors.text
 region: h2
 
 -- ftd.text: $service.body
 if: {service.body != NULL}
 role: $inherited.types.copy-large
+color: $inherited.colors.text
 text-align: center
 
 -- ftd.row:
@@ -590,10 +593,12 @@ src: $application.image
 
 -- ftd.text: $application.title
 role: $inherited.types.heading-large
+color: $inherited.colors.text
 margin-bottom.px: 24
 
 -- ftd.text: $application.body
 role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- ftd.column:
 wrap: true
@@ -633,17 +638,21 @@ spacing.fixed.px: 20
 
 -- ftd.text: $application-card.number
 role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- ftd.text: $application-card.title
 role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- end: ftd.row
 
 -- ftd.text: $application-card.body
 role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- ftd.text: $application-card.cta-text
 role: $inherited.types.label-large
+color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -675,10 +684,12 @@ padding-bottom.px: 48
 -- ftd.text: $signup.title
 if: {signup.title != NULL}
 role: $inherited.types.heading-large
+color: $inherited.colors.text
 
 -- ftd.text: $signup.body
 if: {signup.body != NULL}
 role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -721,22 +732,24 @@ spacing.fixed.px: 615
 
 -- ftd.text: $footer.text-1
 role: $inherited.types.source-code
+color: $inherited.colors.text
 
 -- ftd.text: $footer.text-2
 if: {footer.text-2 != NULL}
 role: $inherited.types.source-code
+color: $inherited.colors.text
 
 -- ftd.row:
 spacing.fixed.px: 24
 
 -- ftd.text: $footer.cta-text-1
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-1
+color: $inherited.colors.text
 link: $footer.url-1
 
 -- ftd.text: $footer.cta-text-2
 role: $inherited.types.copy-regular
-color: $inherited.colors.background.step-1
+color: $inherited.colors.text
 link: $footer.url-2
 
 -- end: ftd.row
