@@ -6,19 +6,18 @@
 
 
 
-
 -- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
 cover: $assets.files.images.cover.png
-button-whatsapp: WhatsApp
-whatsapp-icon: $assets.files.images.whatsapp.png
-whatsapp-url: https://wa.me/18324121561
-button-sms: SMS
-sms-icon: $assets.files.images.sms.png
-sms-url: sms:+15124002950
-button-web: Web
-web-icon: $assets.files.images.web.png
-web-url: https://chatai.com/chat/
+button-primary-1: WhatsApp
+button-primary-1-icon: $assets.files.images.whatsapp.png
+button-primary-1-url: https://wa.me/18324121561
+button-primary-2: SMS
+button-primary-2-icon: $assets.files.images.sms.png
+button-primary-2-url: sms:+15124002950
+button-secondary-1: Web
+button-secondary-1-icon: $assets.files.images.web.png
+button-secondary-1-url: https://chatai.com/chat/
 
 Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
 It will push your productivity and efficiency to another galaxy.
@@ -27,7 +26,7 @@ It will push your productivity and efficiency to another galaxy.
 
 
 
--- lib.pricing: Everything at your disposal
+-- lib.pricing-section: Everything at your disposal
 head: Pricing Plans
 
 -- lib.pricing-card: Trial
@@ -51,103 +50,103 @@ feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
 
--- end: lib.pricing
+-- end: lib.pricing-section
 
 
 
 
 
--- lib.service: Things you can do with ChatAI
+-- lib.grid-section: Things you can do with ChatAI
 
 Whether you are looking for recommendations, reminders, or simply want to chat, 
 our AI chat service is here to provide you with a personalized experience.
 
--- lib.service-card: Automate Life
+-- lib.grid-card: Automate Life
 index: 0
 
 Let ChatAI automate boring tasks that eat up your time. Focus on the present.
 
--- lib.service-card: Get Suggestions
+-- lib.grid-card: Get Suggestions
 index: 1
 
 Don't know what will look good on Red Shoes? Ask ChatAI
 
--- lib.service-card: Send Clever Texts
+-- lib.grid-card: Send Clever Texts
 index: 2
 
 Surprise your co-workers with your smart replies and humor.
 
--- lib.service-card: Schedule Meetings
+-- lib.grid-card: Schedule Meetings
 index: 3
 
 Ask ChatAI to book or schedule your meetings. It's like your little Pepper Potts
 
--- lib.service-card: Complete Tasks
+-- lib.grid-card: Complete Tasks
 index: 4
 
 Got complex and layered tasks? Let ChatAI build a customized plan for you
 
--- lib.service-card: Your New BFF
+-- lib.grid-card: Your New BFF
 index: 5
 
 Had a bad day? ChatAI can be your supportive and discreet friend.
 
--- lib.service-card: Know your day
+-- lib.grid-card: Know your day
 index: 6
 
 Get the best Good Morning texts with today's weather.
 
--- lib.service-card: Ask Questions
+-- lib.grid-card: Ask Questions
 index: 7
 
 Imagine the toughest question. Get surprised by ChatAI's answers.
 
--- lib.service-card: Translate Like a Boss
+-- lib.grid-card: Translate Like a Boss
 index: 8
 
 ¿Usaste ChatAi para traducir esto? Traduce como un jefe
 
--- end: lib.service
+-- end: lib.grid-section
 
 
 
 
 
--- lib.application: Get Started
+-- lib.image-with-card-section: Get Started
 image: $assets.files.images.user.png
 
 With ChatAI, getting started is a breeze - the user-friendly interface makes it 
 easy to start chatting with friends, family, and colleagues.
 
--- lib.application-card: **Setup ChatAI with your WhatsApp.**
+-- lib.cta-card: **Setup ChatAI with your WhatsApp.**
 number: 01
 cta-text: Learn more
 
 If you're out of data, you can also start a  conversation by sending a text 
 to +1 (832) 412-1561.
 
--- lib.application-card: **Use ChatAI with your phone**
+-- lib.cta-card: **Use ChatAI with your phone**
 number: 02
 cta-text: Learn more
 
 Let ChatAI understand your chatting behavior. More you chat, better it becomes.
 
--- lib.application-card: **ChatAI in your advantage**
+-- lib.cta-card: **ChatAI in your advantage**
 number: 03
 cta-text: Learn more
 
 Forward smart replies to real people or groups. Be more productive, clever and 
 awesome!
 
--- end: lib.application
+-- end: lib.image-with-card-section
 
--- lib.signup: **Want to get your own ChatGPT?**
+-- lib.get-in-touch: **Want to get your own ChatGPT?**
 
 Signup today and get ChatAI, try for free.
 
 -- lib.button: Try for free
 url: https://chatai.com/chat/
 
--- end: lib.signup
+-- end: lib.get-in-touch
 
 -- end: lib.page
