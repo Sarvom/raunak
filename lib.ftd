@@ -2,13 +2,53 @@
 -- import: sarvom.github.io/outfit-typography
 -- import: sarvom.github.io/raunak-cs
 
+-- component page:
+ftd.image-src logo: images/Logo.png
+string cta-text-1: Home
+string cta-text-2: Pricing
+string cta-text-3: Support
+string cta-button-1: Login
+children c:
+
+-- ftd.column:
+width: fill-container
+
+-- navbar: 
+logo: $page.logo
+cta-text-1: $page.cta-text-1
+cta-text-2: $page.cta-text-2
+cta-text-3: $page.cta-text-3
+cta-button-1: $page.cta-button-1
+
+-- ftd.column:
+width: fill-container
+children: $page.c
+colors: $raunak-cs.main
+types: $outfit-typography.types
+
+-- end: ftd.column
+
+-- footer:
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
 -- component navbar:
 ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
 string cta-button-1:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.row:
 width: fill-container
@@ -81,7 +121,6 @@ url: https://chatai.com/chat/
 -- component button:
 caption name:
 string url:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -109,7 +148,7 @@ link: $button.url
 -- component hero:
 ftd.image-src icon:
 ftd.image-src cover:
-string headline:
+caption headline:
 body content:
 string button-whatsapp:
 ftd.image-src whatsapp-icon:
@@ -255,8 +294,8 @@ caption plan-name:
 string plan-type:
 string duration:
 string feature-1:
-string feature-2:
-string feature-3:
+optional string feature-2:
+optional string feature-3:
 ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
@@ -392,10 +431,9 @@ children: $pricing.wrap
 
 -- component service-card:
 caption title:
+integer index:
 body body:
 ftd.color title-color:
-ftd.color border-color:
-ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 background.solid: #F1F3F8
@@ -404,7 +442,15 @@ width.fixed.px: 336
 border-radius.px: 8
 padding.px: 30
 border-left-width.px: 4
-border-color: $service-card.border-color
+border-color if { $service-card.index == 0 }: #CD4A88
+border-color if { $service-card.index == 1 }: #CD4A88
+border-color if { $service-card.index == 2 }: #CD4A88
+border-color if { $service-card.index == 3 }: #CD4A88
+border-color if { $service-card.index == 4 }: #CD4A88
+border-color if { $service-card.index == 5 }: #4AA6CD
+border-color if { $service-card.index == 6 }: #CD4A88
+border-color if { $service-card.index == 7 }: #CD4A88
+border-color if { $service-card.index == 8 }: #CD4A88
 
 -- ftd.text: $service-card.title
 role: $inherited.types.copy-regular
@@ -460,13 +506,36 @@ width: fill-container
 align-self: center
 align-content: center
 spacing.fixed.px: 16
-children: $service.wrap
+
+-- service-card-wrapper: $o
+$loop$: $service.wrap as $o
+index: $LOOP.COUNTER
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: service
+
+
+
+
+
+
+
+
+
+-- component service-card-wrapper:
+caption ftd.ui o:
+integer index:
+
+-- ftd.column:
+
+-- service-card-wrapper.o:
+
+-- end: ftd.column
+
+-- end: service-card-wrapper
 
 
 
@@ -547,15 +616,15 @@ margin-vertical.px: 50
 spacing.fixed.px: 20
 
 -- ftd.text: $application-card.number
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- ftd.text: $application-card.title
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 
 -- end: ftd.row
 
 -- ftd.text: $application-card.body
-role: $inherited.types.label-large
+role: $inherited.types.copy-regular
 
 -- ftd.text: $application-card.cta-text
 role: $inherited.types.label-large
