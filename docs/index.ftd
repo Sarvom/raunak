@@ -50,7 +50,7 @@ src: $assets.files.images.hero-ss.png
 -- ds.code:
 lang: ftd
 
-\-- lib.pricing: Everything at your disposal
+\-- lib.pricing-section: Everything at your disposal
 head: Pricing Plans
 
 \-- lib.pricing-card: Trial
@@ -74,14 +74,14 @@ feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
 
-\-- end: lib.pricing
+\-- end: lib.pricing-section
 
 -- end: ds.code
 
 
 
 
--- lib.pricing: Everything at your disposal
+-- lib.pricing-section: Everything at your disposal
 head: Pricing Plans
 
 -- lib.pricing-card: Trial
@@ -105,7 +105,7 @@ feature-1: 20 messages
 feature-2: Basic AI Algorithms
 feature-3: Email support
 
--- end: lib.pricing
+-- end: lib.pricing-section
 
 -- ds.code: 
 lang: ftd
