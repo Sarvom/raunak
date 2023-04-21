@@ -124,12 +124,14 @@ ftd.type-data types: $outfit-typography.types
 
 -- ftd.column:
 width: fill-container
+margin-horizontal.px: 200
 
 -- ftd.row:
-margin-horizontal.px: 108
+margin-top.px: 108
 spacing.fixed.px: 140
 
 -- ftd.column:
+width.fixed.px: 516
 
 -- ftd.image:
 src: $hero.icon
@@ -230,6 +232,7 @@ link: $hero.web-url
 
 -- ftd.image:
 src: $hero.cover
+width.fixed.px: 459
 
 -- end: ftd.row
 
@@ -263,7 +266,7 @@ align-content: center
 height.fixed.px: 511
 width.fixed.px: 311
 background.solid: #F1F3F8
-
+padding-bottom.px: 53
 
 -- ftd.text: $pricing-card.plan-name
 role: $inherited.types.heading-small
