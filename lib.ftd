@@ -157,15 +157,7 @@ ftd.image-src icon:
 ftd.image-src cover:
 caption headline:
 body content:
-string button-primary-1:
-ftd.image-src button-primary-1-icon:
-string button-primary-1-url:
-string button-primary-2:
-ftd.image-src button-primary-2-icon:
-string button-primary-2-url:
-string button-secondary-1:
-ftd.image-src button-secondary-1-icon:
-string button-secondary-1-url:
+children c:
 
 -- ftd.column:
 margin-horizontal.px: 200
@@ -193,84 +185,8 @@ color: $inherited.colors.text
 $hero.content
 
 -- ftd.row:
-spacing.fixed.px: 6
-
--- ftd.row:
-align-self: center
 align-content: center
-width.fixed.px: 250
-height.fixed.px: 88
-padding-vertical.px: 24
-padding-horizontal.px: 53
-border-width.px: 1
-border-radius.px: 8
-background.solid: $inherited.colors.cta-primary.base
-border-color: $inherited.colors.cta-primary.base
-
--- ftd.image:
-src: $hero.button-primary-1-icon
-width.fixed.px: 33
-height.fixed.px: 33
-margin-right.px: 8
-
--- ftd.text: $hero.button-primary-1
-role: $inherited.types.copy-large
-text-align: center
-color: $inherited.colors.text
-link: $hero.button-primary-1-url
--- end: ftd.row
-
--- ftd.row:
-align-content: center
-width.fixed.px: 250
-height.fixed.px: 88
-padding-vertical.px: 24
-padding-horizontal.px: 53
-border-width.px: 1
-border-radius.px: 8
-background.solid: $inherited.colors.cta-primary.base
-border-color: $inherited.colors.cta-primary.base
-
--- ftd.image:
-src: $hero.button-primary-2-icon
-width.fixed.px: 23
-height.fixed.px: 33
-margin-right.px: 8
-
--- ftd.text: $hero.button-primary-2
-role: $inherited.types.copy-large
-text-align: center
-color: $inherited.colors.text
-link: $hero.button-primary-2-url
-
--- end: ftd.row
-
--- end: ftd.row
-
--- ftd.row:
-align-content: center
-width.fixed.px: 512
-height.fixed.px: 88
-padding-vertical.px: 24
-padding-horizontal.px: 53
-border-width.px: 2
-border-radius.px: 8
-border-color: $inherited.colors.cta-primary.base
-margin-top.px: 30
-
--- ftd.image:
-src: $hero.button-secondary-1-icon
-width.fixed.px: 33
-height.fixed.px: 30
-margin-right.px: 8
-
--- ftd.text: $hero.button-secondary-1
-role: $inherited.types.copy-large
-color: $inherited.colors.cta-secondary.text
-text-align: center
-link: $hero.button-secondary-1-url
-
--- end: ftd.row
+children: $hero.c
 
 -- end: ftd.column
 
@@ -297,6 +213,112 @@ width.fixed.px: 459
 
 
 
+-- component hero-button:
+string button-primary-1:
+ftd.image-src button-primary-1-icon:
+string button-primary-1-url:
+string button-primary-2:
+ftd.image-src button-primary-2-icon:
+string button-primary-2-url:
+string button-secondary-1:
+ftd.image-src button-secondary-1-icon:
+string button-secondary-1-url:
+
+-- ftd.column:
+
+-- ftd.row:
+spacing.fixed.px: 6
+
+-- ftd.row:
+align-self: center
+align-content: center
+width.fixed.px: 250
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
+border-width.px: 1
+border-radius.px: 8
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+
+-- ftd.image:
+src: $hero-button.button-primary-1-icon
+width.fixed.px: 33
+height.fixed.px: 33
+margin-right.px: 8
+
+-- ftd.text: $hero-button.button-primary-1
+role: $inherited.types.copy-large
+text-align: center
+color: $inherited.colors.text
+link: $hero-button.button-primary-1-url
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+width.fixed.px: 250
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
+border-width.px: 1
+border-radius.px: 8
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+
+-- ftd.image:
+src: $hero-button.button-primary-2-icon
+width.fixed.px: 23
+height.fixed.px: 33
+margin-right.px: 8
+
+-- ftd.text: $hero-button.button-primary-2
+role: $inherited.types.copy-large
+text-align: center
+color: $inherited.colors.text
+link: $hero-button.button-primary-2-url
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: center
+width.fixed.px: 512
+height.fixed.px: 88
+padding-vertical.px: 24
+padding-horizontal.px: 53
+border-width.px: 2
+border-radius.px: 8
+border-color: $inherited.colors.cta-primary.base
+margin-top.px: 30
+
+-- ftd.image:
+src: $hero-button.button-secondary-1-icon
+width.fixed.px: 33
+height.fixed.px: 30
+margin-right.px: 8
+
+-- ftd.text: $hero-button.button-secondary-1
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-secondary.text
+text-align: center
+link: $hero-button.button-secondary-1-url
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: hero-button
+
+
+
+
+
+
+
+
+
+
 -- component pricing-card:
 caption plan-name:
 string plan-type:
@@ -304,6 +326,8 @@ string duration:
 string feature-1:
 optional string feature-2:
 optional string feature-3:
+optional string feature-4:
+optional string feature-5:
 
 -- ftd.column:
 align-self: center
@@ -348,6 +372,7 @@ color: $inherited.colors.text
 -- end: ftd.row
 
 -- ftd.row:
+if: {pricing-card.feature-2 != NULL}
 align-content: left
 spacing.fixed.px: 16
 
@@ -361,6 +386,7 @@ color: $inherited.colors.text
 -- end: ftd.row
 
 -- ftd.row:
+if: {pricing-card.feature-3 != NULL}
 align-content: left
 spacing.fixed.px: 16
 
@@ -368,6 +394,34 @@ spacing.fixed.px: 16
 src: $assets.files.images.Vectortick.png
 
 -- ftd.text: $pricing-card.feature-3
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+if: {pricing-card.feature-4 != NULL}
+align-content: left
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: $assets.files.images.Vectortick.png
+
+-- ftd.text: $pricing-card.feature-4
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+if: {pricing-card.feature-5 != NULL}
+align-content: left
+spacing.fixed.px: 16
+
+-- ftd.image:
+src: $assets.files.images.Vectortick.png
+
+-- ftd.text: $pricing-card.feature-5
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 
@@ -395,7 +449,7 @@ url: https://chatai.com/chat/
 optional caption title:
 optional string head:
 optional body body:
-children wrap:
+children c:
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -424,7 +478,7 @@ width: fill-container
 align-self: center
 align-content: center
 spacing.fixed.px: 25
-children: $pricing-section.wrap
+children: $pricing-section.c
 
 -- end: ftd.row
 
