@@ -457,7 +457,7 @@ spacing.fixed.px: 24
 align-content: center
 align-self: center
 padding-vertical.px: 120
-padding-horizontal.px: 200
+padding-horizontal.px if { ftd.device == "desktop" }: 200
 
 -- ftd.text: $pricing-section.head
 role: $inherited.types.heading-tiny
