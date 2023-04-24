@@ -1,0 +1,150 @@
+-- import: sarvom.github.io/raunak/assets
+-- import: sarvom.github.io/raunak/lib
+-- import: fifthtry.github.io/doc-site as ds
+-- import: sarvom.github.io/outfit-typography
+-- import: sarvom.github.io/raunak-cs
+
+-- ds.page: Chat AI Documentation
+site-logo: images/moblogo.png
+colors: $raunak-cs.main
+types: $outfit-typography.types
+
+-- ds.code:
+lang: ftd
+
+\-- lib.pricing-section: Everything at your disposal
+head: Pricing Plans
+
+\-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- lib.pricing-card: Premium
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- lib.pricing-card: Platinum
+plan-type: Pro
+duration: **$90 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- end: lib.pricing-section
+
+-- end: ds.code
+
+
+
+
+-- lib.pricing-section: Everything at your disposal
+head: Pricing Plans
+
+-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Premium
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Platinum
+plan-type: Pro
+duration: **$90 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- end: lib.pricing-section
+
+
+-- ds.code:
+lang: ftd
+
+\-- lib.pricing-section: Everything at your disposal
+head: Pricing Plans
+
+\-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- lib.pricing-card: Premium
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- lib.pricing-card: Gold
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- lib.pricing-card: Platinum
+plan-type: Pro
+duration: **$90 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+\-- end: lib.pricing-section
+
+-- end: ds.code
+
+
+
+
+-- lib.pricing-section: Everything at your disposal
+head: Pricing Plans
+
+-- lib.pricing-card: Trial
+plan-type: Basic
+duration: **14 Days**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Premium
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Gold
+plan-type: Starter
+duration: **$9 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- lib.pricing-card: Platinum
+plan-type: Pro
+duration: **$90 / mo**
+feature-1: 20 messages
+feature-2: Basic AI Algorithms
+feature-3: Email support
+
+-- end: lib.pricing-section
+
+-- ds.image:
+src: $assets.files.images.pricing-ss.png
+
+-- end: ds.page

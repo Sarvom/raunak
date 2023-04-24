@@ -452,6 +452,7 @@ optional body body:
 children c:
 
 -- ftd.column:
+width: fill-container
 spacing.fixed.px: 24
 align-content: center
 align-self: center
@@ -474,7 +475,6 @@ text-align: center
 
 -- ftd.row:
 wrap: true
-width: fill-container
 align-self: center
 align-content: center
 spacing.fixed.px: 25

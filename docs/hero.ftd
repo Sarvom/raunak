@@ -56,3 +56,5 @@ button-secondary-1-url: https://chatai.com/chat/
 
 -- ds.image:
 src: $assets.files.images.hero-ss.png
+
+-- end: ds.page
