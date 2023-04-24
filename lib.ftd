@@ -259,7 +259,7 @@ margin-right.px: 8
 -- ftd.text: $hero-button.button-primary-1
 role: $inherited.types.copy-large
 text-align: center
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 
 
 -- end: ftd.row
@@ -288,7 +288,7 @@ margin-right.px: 8
 -- ftd.text: $hero-button.button-primary-2
 role: $inherited.types.copy-large
 text-align: center
-color: $inherited.colors.text
+color: $inherited.colors.cta-primary.text
 
 -- end: ftd.row
 
