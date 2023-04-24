@@ -664,7 +664,7 @@ src: $image-with-card-section.image
 -- ftd.text: $image-with-card-section.title
 role: $inherited.types.heading-large
 color: $inherited.colors.text
-margin-bottom.px: 24
+margin-vertical.px: 24
 
 -- ftd.text: $image-with-card-section.body
 role: $inherited.types.copy-regular
@@ -701,24 +701,27 @@ body body:
 string cta-text:
 
 -- ftd.column:
-margin-vertical.px: 50
+margin-vertical.px: 25
 
 -- ftd.row:
 spacing.fixed.px: 20
 
 -- ftd.text: $cta-card.number
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.base
+margin-bottom.px: 12
 
 -- ftd.text: $cta-card.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+margin-bottom.px: 12
 
 -- end: ftd.row
 
 -- ftd.text: $cta-card.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+margin-bottom.px: 12
 
 -- ftd.text: $cta-card.cta-text
 role: $inherited.types.label-large

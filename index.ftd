@@ -3,6 +3,11 @@
 -- import: sarvom.github.io/outfit-font
 
 -- lib.page:
+logo: $assets.files.images.Logo.png
+cta-text-1: Home
+cta-text-2: Pricing
+cta-text-3: Support
+cta-button-1: Login
 
 
 
