@@ -801,12 +801,12 @@ padding-vertical.px: 125
 spacing.fixed.px: 615
 
 -- ftd.text: $footer.text-1
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- ftd.text: $footer.text-2
 if: {footer.text-2 != NULL}
-role: $inherited.types.source-code
+role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
 -- ftd.row:
