@@ -6,6 +6,7 @@
 
 
 
+
 -- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
 cover: $assets.files.images.cover.png
@@ -25,10 +26,6 @@ button-secondary-1-icon: $assets.files.images.web.png
 button-secondary-1-url: https://chatai.com/chat/
 
 -- end: lib.hero
-
-
-
-
 
 
 

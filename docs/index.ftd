@@ -15,6 +15,11 @@ lang: ftd
 \-- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
 cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+\-- lib.hero-button:
 button-primary-1: WhatsApp
 button-primary-1-icon: $assets.files.images.whatsapp.png
 button-primary-1-url: https://wa.me/18324121561
@@ -25,14 +30,18 @@ button-secondary-1: Web
 button-secondary-1-icon: $assets.files.images.web.png
 button-secondary-1-url: https://chatai.com/chat/
 
-Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
-It will push your productivity and efficiency to another galaxy.
+\-- end: lib.hero
 
 -- end: ds.code
 
 -- lib.hero: **What if ChatAI was your best friend?**
 icon: $assets.files.images.moblogo.png
 cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+-- lib.hero-button:
 button-primary-1: WhatsApp
 button-primary-1-icon: $assets.files.images.whatsapp.png
 button-primary-1-url: https://wa.me/18324121561
@@ -43,8 +52,7 @@ button-secondary-1: Web
 button-secondary-1-icon: $assets.files.images.web.png
 button-secondary-1-url: https://chatai.com/chat/
 
-Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
-It will push your productivity and efficiency to another galaxy.
+-- end: lib.hero
 
 -- ds.image:
 src: $assets.files.images.hero-ss.png
