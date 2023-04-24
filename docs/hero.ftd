@@ -1,0 +1,60 @@
+-- import: sarvom.github.io/raunak/assets
+-- import: sarvom.github.io/raunak/lib
+-- import: fifthtry.github.io/doc-site as ds
+-- import: sarvom.github.io/outfit-typography
+-- import: sarvom.github.io/raunak-cs
+
+-- ds.page: Chat AI Documentation
+site-logo: images/moblogo.png
+colors: $raunak-cs.main
+types: $outfit-typography.types
+
+-- ds.code: 
+lang: ftd
+
+\-- lib.hero: **What if ChatAI was your best friend?**
+icon: $assets.files.images.moblogo.png
+cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+\-- lib.hero-button:
+button-primary-1: WhatsApp
+button-primary-1-icon: $assets.files.images.whatsapp.png
+button-primary-1-url: https://wa.me/18324121561
+button-primary-2: SMS
+button-primary-2-icon: $assets.files.images.sms.png
+button-primary-2-url: sms:+15124002950
+button-secondary-1: Web
+button-secondary-1-icon: $assets.files.images.web.png
+button-secondary-1-url: https://chatai.com/chat/
+
+\-- end: lib.hero
+
+-- end: ds.code
+
+-- lib.hero: **What if ChatAI was your best friend?**
+icon: $assets.files.images.moblogo.png
+cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+-- lib.hero-button:
+button-primary-1: WhatsApp
+button-primary-1-icon: $assets.files.images.whatsapp.png
+button-primary-1-url: https://wa.me/18324121561
+button-primary-2: SMS
+button-primary-2-icon: $assets.files.images.sms.png
+button-primary-2-url: sms:+15124002950
+button-secondary-1: Web
+button-secondary-1-icon: $assets.files.images.web.png
+button-secondary-1-url: https://chatai.com/chat/
+
+-- end: lib.hero
+
+-- ds.image:
+src: $assets.files.images.hero-ss.png
+
+-- end: ds.page
