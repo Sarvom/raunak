@@ -1,0 +1,35 @@
+-- import: sarvom.github.io/raunak/assets
+-- import: sarvom.github.io/raunak/lib
+-- import: fifthtry.github.io/doc-site as ds
+-- import: sarvom.github.io/outfit-typography
+-- import: sarvom.github.io/raunak-cs
+
+-- ds.page: Chat AI Documentation
+site-logo: images/moblogo.png
+colors: $raunak-cs.main
+types: $outfit-typography.types
+
+-- ds.code:
+lang: ftd
+
+\-- lib.get-in-touch: **Want to get your own ChatGPT?**
+
+Signup today and get ChatAI, try for free.
+
+\-- lib.button: Try for free
+url: https://chatai.com/chat/
+
+\-- end: lib.get-in-touch
+
+-- end: ds.code
+
+-- lib.get-in-touch: **Want to get your own ChatGPT?**
+
+Signup today and get ChatAI, try for free.
+
+-- lib.button: Try for free
+url: https://chatai.com/chat/
+
+-- end: lib.get-in-touch
+
+-- end: ds.page
