@@ -128,6 +128,7 @@ url: https://chatai.com/chat/
 -- component button:
 caption name:
 string url:
+boolean $is-active: false
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -138,6 +139,9 @@ border-width.px: 1
 border-radius.px: 4
 background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
+border-color if {button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
 color: $inherited.colors.cta-primary.text
 link: $button.url
 
@@ -223,6 +227,7 @@ string button-primary-2-url:
 string button-secondary-1:
 ftd.image-src button-secondary-1-icon:
 string button-secondary-1-url:
+boolean $is-active: false
 
 -- ftd.column:
 
@@ -240,6 +245,10 @@ border-width.px: 1
 border-radius.px: 8
 background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
+border-color if {hero-button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-button.is-active, v = false)
+link: $hero-button.button-primary-1-url
 
 -- ftd.image:
 src: $hero-button.button-primary-1-icon
@@ -251,7 +260,8 @@ margin-right.px: 8
 role: $inherited.types.copy-large
 text-align: center
 color: $inherited.colors.text
-link: $hero-button.button-primary-1-url
+
+
 -- end: ftd.row
 
 -- ftd.row:
@@ -264,6 +274,10 @@ border-width.px: 1
 border-radius.px: 8
 background.solid: $inherited.colors.cta-primary.base
 border-color: $inherited.colors.cta-primary.base
+border-color if {hero-button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-button.is-active, v = false)
+link: $hero-button.button-primary-2-url
 
 -- ftd.image:
 src: $hero-button.button-primary-2-icon
@@ -275,7 +289,6 @@ margin-right.px: 8
 role: $inherited.types.copy-large
 text-align: center
 color: $inherited.colors.text
-link: $hero-button.button-primary-2-url
 
 -- end: ftd.row
 
@@ -290,6 +303,10 @@ padding-horizontal.px: 53
 border-width.px: 2
 border-radius.px: 8
 border-color: $inherited.colors.cta-primary.base
+border-color if {hero-button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-button.is-active, v = false)
+link: $hero-button.button-secondary-1-url
 margin-top.px: 30
 
 -- ftd.image:
@@ -302,7 +319,6 @@ margin-right.px: 8
 role: $inherited.types.copy-large
 color: $inherited.colors.cta-secondary.text
 text-align: center
-link: $hero-button.button-secondary-1-url
 
 -- end: ftd.row
 
