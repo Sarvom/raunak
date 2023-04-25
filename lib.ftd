@@ -164,14 +164,19 @@ body content:
 children c:
 
 -- ftd.column:
-margin-horizontal.px: 200
+align-self: center
+align-content: center
 
 -- ftd.row:
+align-self: center
+align-content: center
+width: fill-container
 margin-top.px: 108
-spacing.fixed.px: 140
+
 
 -- ftd.column:
-width.fixed.px: 516
+width.fixed.percent: 35.8
+margin-right.px: 140
 
 -- ftd.image:
 src: $hero.icon
@@ -198,7 +203,7 @@ children: $hero.c
 
 -- ftd.image:
 src: $hero.cover
-width.fixed.px: 459
+width.fixed.percent: 90
 
 -- end: ftd.row
 
@@ -237,7 +242,7 @@ spacing.fixed.px: 6
 -- ftd.row:
 align-self: center
 align-content: center
-width.fixed.px: 250
+width.fixed.percent: 49
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -266,7 +271,7 @@ color: $inherited.colors.cta-primary.text
 
 -- ftd.row:
 align-content: center
-width.fixed.px: 250
+width.fixed.percent: 49
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -296,7 +301,7 @@ color: $inherited.colors.cta-primary.text
 
 -- ftd.row:
 align-content: center
-width.fixed.px: 512
+width.fixed.percent: 100
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -348,10 +353,9 @@ optional string feature-5:
 -- ftd.column:
 align-self: center
 align-content: center
-height.fixed.px: 511
-width.fixed.px: 311
 background.solid: $inherited.colors.background.step-1
-padding-bottom.px: 53
+padding-horizontal.px: 60
+padding-bottom.px: 50
 
 -- ftd.text: $pricing-card.plan-name
 role: $inherited.types.heading-small
@@ -472,8 +476,8 @@ width: fill-container
 spacing.fixed.px: 24
 align-content: center
 align-self: center
-padding-vertical.px: 120
-padding-horizontal.px if { ftd.device == "desktop" }: 200
+margin-vertical.px: 120
+margin-horizontal.px: 200
 
 -- ftd.text: $pricing-section.head
 role: $inherited.types.heading-tiny
@@ -490,11 +494,12 @@ role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
-wrap: true
+width: fill-container
 align-self: center
 align-content: center
-spacing.fixed.px: 25
 children: $pricing-section.c
+spacing.fixed.px if { ftd.device == "desktop" }: 25
+wrap: true
 
 -- end: ftd.row
 
@@ -572,8 +577,7 @@ children wrap:
 width: fill-container
 spacing.fixed.px: 24
 align-content: center
-padding-vertical.px: 120
-padding-horizontal.px: 200
+margin-vertical.px: 120
 
 -- ftd.text: $grid-section.head
 if: {grid-section.head != NULL}
@@ -593,11 +597,11 @@ color: $inherited.colors.text
 text-align: center
 
 -- ftd.row:
-wrap: true
-width: fill-container
 align-self: center
 align-content: center
 spacing.fixed.px: 16
+margin-horizontal.px: 200
+wrap: true
 
 -- grid-card-wrapper: $o
 $loop$: $grid-section.wrap as $o
@@ -646,13 +650,9 @@ children wrap:
 
 -- ftd.row:
 width: fill-container
-padding-left.px: 102
-padding-right.px: 200
-spacing.fixed.px: 89
 
 -- ftd.column:
-width.fixed.px: 631
-height.fixed.px: 763
+width.fixed.percent: 50
 
 -- ftd.image:
 src: $image-with-card-section.image
@@ -660,6 +660,7 @@ src: $image-with-card-section.image
 -- end: ftd.column
 
 -- ftd.column:
+margin-horizontal.px: 120
 
 -- ftd.text: $image-with-card-section.title
 role: $inherited.types.heading-large
@@ -699,6 +700,7 @@ caption title:
 string number:
 body body:
 string cta-text:
+string cta-url:
 
 -- ftd.column:
 margin-vertical.px: 25
@@ -726,6 +728,7 @@ margin-bottom.px: 12
 -- ftd.text: $cta-card.cta-text
 role: $inherited.types.label-large
 color: $inherited.colors.text
+link: $cta-card.cta-url
 
 -- end: ftd.column
 
