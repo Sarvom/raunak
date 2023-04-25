@@ -128,21 +128,24 @@ With ChatAI, getting started is a breeze - the user-friendly interface makes it
 easy to start chatting with friends, family, and colleagues.
 
 -- lib.cta-card: **Setup ChatAI with your WhatsApp.**
-number: 01
+number: **01**
 cta-text: Learn more
+cta-url: /
 
 If you're out of data, you can also start a  conversation by sending a text 
 to +1 (832) 412-1561.
 
 -- lib.cta-card: **Use ChatAI with your phone**
-number: 02
+number: **02**
 cta-text: Learn more
+cta-url: /
 
 Let ChatAI understand your chatting behavior. More you chat, better it becomes.
 
 -- lib.cta-card: **ChatAI in your advantage**
-number: 03
+number: **03**
 cta-text: Learn more
+cta-url: /
 
 Forward smart replies to real people or groups. Be more productive, clever and 
 awesome!

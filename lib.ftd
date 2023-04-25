@@ -164,14 +164,16 @@ body content:
 children c:
 
 -- ftd.column:
-margin-horizontal.px: 200
+width: fill-container
 
 -- ftd.row:
+width: fill-container
 margin-top.px: 108
+margin-horizontal.px: 200
 spacing.fixed.px: 140
 
 -- ftd.column:
-width.fixed.px: 516
+width.fixed.percent: 35.8
 
 -- ftd.image:
 src: $hero.icon
@@ -198,7 +200,7 @@ children: $hero.c
 
 -- ftd.image:
 src: $hero.cover
-width.fixed.px: 459
+width.fixed.percent: 90
 
 -- end: ftd.row
 
@@ -237,7 +239,7 @@ spacing.fixed.px: 6
 -- ftd.row:
 align-self: center
 align-content: center
-width.fixed.px: 250
+width.fixed.percent: 49
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -266,7 +268,7 @@ color: $inherited.colors.cta-primary.text
 
 -- ftd.row:
 align-content: center
-width.fixed.px: 250
+width.fixed.percent: 49
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -296,7 +298,7 @@ color: $inherited.colors.cta-primary.text
 
 -- ftd.row:
 align-content: center
-width.fixed.px: 512
+width.fixed.percent: 100
 height.fixed.px: 88
 padding-vertical.px: 24
 padding-horizontal.px: 53
@@ -490,11 +492,23 @@ role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
+
+-- ftd.image:
+src: $assets.files.images.dots.png
+z-index: -1
+
+-- ftd.image:
+src: $assets.files.images.lines.png
+z-index: -1
+
+-- ftd.row:
 wrap: true
 align-self: center
 align-content: center
 spacing.fixed.px: 25
 children: $pricing-section.c
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -699,6 +713,7 @@ caption title:
 string number:
 body body:
 string cta-text:
+string cta-url:
 
 -- ftd.column:
 margin-vertical.px: 25
@@ -726,6 +741,7 @@ margin-bottom.px: 12
 -- ftd.text: $cta-card.cta-text
 role: $inherited.types.label-large
 color: $inherited.colors.text
+link: $cta-card.cta-url
 
 -- end: ftd.column
 
