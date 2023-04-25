@@ -494,6 +494,7 @@ role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
+background.image: $assets.files.images.pricing-bg.png
 width: fill-container
 align-self: center
 align-content: center
