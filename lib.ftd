@@ -478,6 +478,7 @@ spacing.fixed.px: 24
 align-content: center
 align-self: center
 margin-vertical.px: 120
+margin-horizontal.px: 200
 
 -- ftd.text: $pricing-section.head
 role: $inherited.types.heading-tiny
@@ -499,7 +500,7 @@ align-self: center
 
 -- ftd.image:
 src: $assets.files.images.dots.png
-z-index: 1
+z-index: 0
 
 -- ftd.row:
 width: fill-container
@@ -514,7 +515,7 @@ z-index: 2
 
 -- ftd.image:
 src: $assets.files.images.lines.png
-z-index: 1
+z-index: 0
 
 -- end: ftd.row
 
