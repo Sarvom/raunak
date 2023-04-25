@@ -476,8 +476,9 @@ width: fill-container
 spacing.fixed.px: 24
 align-content: center
 align-self: center
-margin-vertical.px: 120
+padding-vertical.px: 120
 margin-horizontal.px: 200
+background.image: $assets.files.images.pricing-bg.png
 
 -- ftd.text: $pricing-section.head
 role: $inherited.types.heading-tiny
@@ -494,12 +495,10 @@ role: $inherited.types.copy-large
 text-align: center
 
 -- ftd.row:
-background.image: $assets.files.images.pricing-bg.png
-width: fill-container
 align-self: center
 align-content: center
 children: $pricing-section.c
-spacing.fixed.px if { ftd.device == "desktop" }: 25
+spacing.fixed.px: 25
 wrap: true
 
 -- end: ftd.row
@@ -589,13 +588,13 @@ color: $inherited.colors.text
 if: {grid-section.title != NULL}
 role: $inherited.types.heading-large
 color: $inherited.colors.text
-region: h2
 
 -- ftd.text: $grid-section.body
 if: {grid-section.body != NULL}
 role: $inherited.types.copy-large
 color: $inherited.colors.text
 text-align: center
+margin-horizontal.px: 400
 
 -- ftd.row:
 align-self: center
