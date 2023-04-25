@@ -353,10 +353,9 @@ optional string feature-5:
 -- ftd.column:
 align-self: center
 align-content: center
-height.fixed.px: 511
-width.fixed.px: 311
 background.solid: $inherited.colors.background.step-1
-padding-bottom.px: 53
+padding-horizontal.px: 60
+padding-bottom.px: 50
 
 -- ftd.text: $pricing-card.plan-name
 role: $inherited.types.heading-small
