@@ -496,25 +496,10 @@ text-align: center
 -- ftd.row:
 width: fill-container
 align-self: center
-
--- ftd.image:
-src: $assets.files.images.dots.png
-z-index: 0
-
--- ftd.row:
-width: fill-container
-align-self: center
 align-content: center
 children: $pricing-section.c
 spacing.fixed.px if { ftd.device == "desktop" }: 25
 wrap: true
-z-index: 2
-
--- end: ftd.row
-
--- ftd.image:
-src: $assets.files.images.lines.png
-z-index: 0
 
 -- end: ftd.row
 
