@@ -1,6 +1,5 @@
 -- import: sarvom.github.io/raunak/assets
 -- import: sarvom.github.io/raunak/lib
--- import: sarvom.github.io/outfit-font
 
 -- lib.page:
 logo: $assets.files.images.Logo.png
