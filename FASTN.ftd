@@ -5,6 +5,20 @@
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
 -- fastn.dependency: sarvom.github.io/outfit-typography
 -- fastn.dependency: sarvom.github.io/raunak-cs
+-- fastn.dependency: fifthtry.github.io/footer as fastn-footer
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds
+
+
+-- fastn.sitemap:
+
+
+# Home: index.html
+
+- ChatAi components: docs/
+- `page`: docs/index.html
+- `hero`: docs/hero/
+- `grid-section`: docs/about/
+- `card`: docs/card/
+- `card` inside `about`: docs/about-card/
+- `slider`: docs/slider/
+- `get-in-touch`: docs/get-in-touch/

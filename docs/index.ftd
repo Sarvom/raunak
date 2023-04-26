@@ -1,38 +1,43 @@
--- import: fifthtry.github.io/virastral/assets
--- import: fifthtry.github.io/virastral/lib
+-- import: fifthtry.github.io/doc-site as ds
+-- import: fifthtry.github.io/footer as fastn-footer
 -- import: sarvom.github.io/raunak/assets
 -- import: sarvom.github.io/raunak/lib
+-- import: sarvom.github.io/outfit-font
 -- import: sarvom.github.io/outfit-typography
 -- import: sarvom.github.io/raunak-cs
 
--- ft.page: 
-site-logo: $assets.files.images.moblogo.png
+
+
+
+
+
+-- ds.page: Docs
+show-footer: true
+site-logo: $assets.files.static.moblogo.png
 colors: $raunak-cs.main
 types: $outfit-typography.types
 
--- pd.package: ChatAi Components
-name: sarvom.github.io/raunak
+-- ds.page.footer:
 
-We have created below components which helps you to create beautiful `ChatAi`
-page components.
+-- footer:
 
-To use ChatAi components on your web package, add below into FASTN.ftd file:
+-- end: ds.page.footer
 
--- cb.code:
-lang: ftd
+-- ds.page.body:
 
-\-- fastn.dependency: fifthtry.github.io/doc-site as ds
-\-- fastn.dependency: sarvom.github.io/outfit-typography
-\-- fastn.dependency: sarvom.github.io/raunak-cs
+This document contains various components we have developed using `ftd`
+language.
 
--- lib.h2: `page` component
+Below are a few sample components:
 
-`page` component comes with `header`, `footer`, and `body` components. You can
-also add more child components inside page component.
+-- ds.h3: Navbar Component
 
--- cb.rendered:
+We have developed the `navbar` component for [admint.io](https://admint.io/), 
+which matches the design currently displayed on the live site.
 
--- cb.rendered.input:
+-- ds.rendered:
+
+-- ds.rendered.input:
 
 \-- lib.page:
 logo: $assets.files.images.Logo.png
@@ -41,11 +46,8 @@ cta-text-2: Pricing
 cta-text-3: Support
 cta-button-1: Login
 
-Some body text on the page if required as it's optional
+-- ds.rendered.output:
 
-\-- end: lib.page
-
--- cb.rendered.output:
 
 -- lib.page:
 logo: $assets.files.images.Logo.png
@@ -54,10 +56,61 @@ cta-text-2: Pricing
 cta-text-3: Support
 cta-button-1: Login
 
--- end: lib.page
+-- end: ds.rendered.output
 
--- end: cb.rendered.output
+-- end: ds.rendered
 
--- end: cb.rendered
+-- ds.h3: Hero Component
 
--- end: ft.page
+We have developed the `hero` component for [admint.io](https://admint.io/), 
+which matches the design currently displayed on the live site.
+
+-- ds.rendered:
+
+-- ds.rendered.input:
+
+\-- lib.hero: **What if ChatAI was your best friend?**
+icon: $assets.files.images.moblogo.png
+cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+-- ds.rendered.output:
+
+-- lib.hero: **What if ChatAI was your best friend?**
+icon: $assets.files.images.moblogo.png
+cover: $assets.files.images.cover.png
+
+Meet ChatAl, the potential pinned chat in your WhatsApp, SMS and Web. 
+It will push your productivity and efficiency to another galaxy.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+
+-- ftd.column:
+width: fill-container
+
+-- fastn-footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: $fastn-footer.fastn-logo.light
+powered-by-text: Powered by
+powered-by-link: https://fastn.io/
+
+-- end: ftd.column
+
+-- end: footer
