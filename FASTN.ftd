@@ -17,8 +17,8 @@
 - ChatAi components: docs/
 - `page`: docs/index.html
 - `hero`: docs/hero/
-- `grid-section`: docs/about/
-- `card`: docs/card/
-- `card` inside `about`: docs/about-card/
-- `slider`: docs/slider/
+- `grid-section`: docs/grid-section/
+- `image-with-card`: docs/image-with-card/
+- `pricing`: docs/pricing/
+- `old`: docs/old/
 - `get-in-touch`: docs/get-in-touch/
