@@ -13,7 +13,7 @@
 
 -- ds.page: Docs
 show-footer: true
-site-logo: $assets.files.static.moblogo.png
+site-logo: $assets.files.images.moblogo.png
 colors: $raunak-cs.main
 types: $outfit-typography.types
 
