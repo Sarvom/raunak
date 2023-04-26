@@ -60,15 +60,14 @@ string cta-button-1:
 width: fill-container
 height: hug-content
 padding-horizontal.px: 200
-padding-vertical.px: 20
-spacing.fixed.px: 279
+margin-vertical.px: 20
 
 -- ftd.image:
 src: $navbar.logo
+margin-right.px: 200
 margin-vertical.px: 12
 
 -- ftd.row:
-spacing.fixed.px: 24
 
 -- ftd.text: $navbar.cta-text-1
 role: $inherited.types.label-large
@@ -92,7 +91,7 @@ margin-horizontal.px: 32
 color: $inherited.colors.cta-tertiary.base
 
 -- ftd.row:
-spacing.fixed.px: 6
+spacing.fixed.px: 8
 
 -- ftd.text: $navbar.cta-button-1
 role: $inherited.types.label-large
@@ -751,6 +750,7 @@ children wrap:
 -- ftd.column:
 width: fill-container
 padding-horizontal.px: 200
+margin-top.px: 120
 
 -- ftd.column:
 align-content: center
